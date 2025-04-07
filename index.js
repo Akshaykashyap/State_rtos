@@ -8,10 +8,10 @@ let rto_data = [];
 
 // Load RTO data from JSON file
 try {
-  const data = fs.readFileSync('rto_data.json', 'utf8');
+  const data = fs.readFileSync(path.join(__dirname, 'rto_data.json'), 'utf8');
   rto_data = JSON.parse(data);
 } catch (err) {
-  console.error(err);
+  console.error('Failed to load RTO data:', err);
 }
 
 app.get('/api/rto/states', (req, res) => {
