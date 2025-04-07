@@ -91,16 +91,15 @@ app.get('/api/rto/states/:stateName/rtocodes', (req, res) => {
     }
 });
 
-// Example: Get RTO by RTO code (if your JSON structure supports it)
 app.get('/api/rto/rtocodes/:rtoCode', (req, res) => {
-  const rtoCode = req.params.rtoCode;
+  const rtoCode = req.params.rtoCode.toLowerCase(); // make it case-insensitive
   let foundRto = null;
 
   for (const stateData of rto_data) {
     for (const districtData of stateData.districts) {
       if (districtData.rtos) {
         for (const rto of districtData.rtos) {
-          if (rto.rto_code === rtoCode) {
+          if (rto.rto_code && rto.rto_code.toLowerCase() === rtoCode) {
             foundRto = rto;
             break;
           }
