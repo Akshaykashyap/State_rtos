@@ -93,7 +93,7 @@ app.get('/api/rto/states/:stateName/rtocodes', (req, res) => {
 
 // Example: Get RTO by RTO code (if your JSON structure supports it)
 app.get('/api/rto/rtocodes/:rtoCode', (req, res) => {
-  const rtoCode = req.params.rtoCode.toLowerCase();
+  const rtoCode = req.params.rtoCode;
   let foundRto = null;
 
   for (const stateData of rto_data) {
