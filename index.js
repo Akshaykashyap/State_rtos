@@ -1,9 +1,9 @@
 const express = require('express');
 const fs = require('fs');
 const app = express();
-const port = 3000;
+// const port = 3000;
 
-let rto_data = []; // Initialize as an array
+let rto_data = []; 
 
 // Load RTO data from JSON file
 try {
@@ -15,16 +15,16 @@ try {
 
 app.get('/api/rto/states', (req, res) => {
   if (rto_data.length > 0) {
-    const states = rto_data.map(item => item.state); // Access state from the array
+    const states = rto_data.map(item => item.state); 
     res.json(states);
   } else {
-    res.json([]); // Return an empty array if no data
+    res.json([]); 
   }
 });
 
 app.get('/api/rto/states/:stateName', (req, res) => {
-  const stateName = req.params.stateName;
-  const stateData = rto_data.find(item => item.state === stateName); // Find the state
+  const stateName = req.params.stateName.toLowerCase();
+  const stateData = rto_data.find(item => item.state.toLowerCase() === stateName); 
 
   if (stateData) {
     res.json(stateData);
@@ -34,8 +34,8 @@ app.get('/api/rto/states/:stateName', (req, res) => {
 });
 
 app.get('/api/rto/states/:stateName/districts', (req, res) => {
-  const stateName = req.params.stateName;
-  const stateData = rto_data.find(item => item.state === stateName);
+  const stateName = req.params.stateName.toLowerCase();
+  const stateData = rto_data.find(item => item.state.toLowerCase() === stateName);
 
   if (stateData) {
     const districts = stateData.districts.map(d => d.district);
@@ -46,12 +46,12 @@ app.get('/api/rto/states/:stateName/districts', (req, res) => {
 });
 
 app.get('/api/rto/states/:stateName/districts/:districtName', (req, res) => {
-  const stateName = req.params.stateName;
-  const districtName = req.params.districtName;
-  const stateData = rto_data.find(item => item.state === stateName);
+  const stateName = req.params.stateName.toLowerCase();
+  const districtName = req.params.districtName.toLowerCase();
+  const stateData = rto_data.find(item => item.state.toLowerCase() === stateName);
 
   if (stateData) {
-    const district = stateData.districts.find(d => d.district === districtName);
+    const district = stateData.districts.find(d => d.district.toLowerCase() === districtName);
     if (district) {
       res.json(district);
     } else {
@@ -65,9 +65,9 @@ app.get('/api/rto/states/:stateName/districts/:districtName', (req, res) => {
 // New endpoint to get all RTO codes for a particular state
 app.get('/api/rto/states/:stateName/rtocodes', (req, res) => {
     console.log("rtocodes route hit!"); 
-    const stateName = req.params.stateName;
+    const stateName = req.params.stateName.toLowerCase();
     console.log("stateName from URL:", stateName); 
-    const stateData = rto_data.find(item => item.state === stateName);
+    const stateData = rto_data.find(item => item.state.toLowerCase() === stateName);
     console.log("stateData:", stateData); 
     if (stateData) {
         let allRtos = [];
@@ -77,8 +77,8 @@ app.get('/api/rto/states/:stateName/rtocodes', (req, res) => {
                     allRtos.push({
                         rto: rto.rto,
                         rto_code: rto.rto_code,
-                        address: rto.address,
-                        phone: rto.phone
+                        address: rto.address && rto.address !== '-' ? rto.address : 'Not Available',
+                        phone: rto.phone && rto.phone !== '-' ? rto.phone : null
                     });
                 }
             }
@@ -116,6 +116,53 @@ app.get('/api/rto/rtocodes/:rtoCode', (req, res) => {
     res.status(404).json({ message: 'RTO code not found' });
   }
 });
+
+// GET /api/rto/states/:stateName/districts/:districtName/rtos
+app.get('/api/rto/states/:stateName/districts/:districtName/rtos', (req, res) => {
+  const stateName = req.params.stateName.toLowerCase();
+  const districtName = req.params.districtName.toLowerCase();
+
+  const stateData = rto_data.find(item => item.state.toLowerCase() === stateName);
+
+  if (stateData) {
+    const districtData = stateData.districts.find(d => d.district.toLowerCase() === districtName);
+    if (districtData) {
+      res.json(districtData.rtos || []);
+    } else {
+      res.status(404).json({ message: 'District not found' });
+    }
+  } else {
+    res.status(404).json({ message: 'State not found' });
+  }
+});
+
+// GET /api/rto/search?q=thane
+app.get('/api/rto/search', (req, res) => {
+  const query = req.query.q?.toLowerCase();
+  if (!query) return res.status(400).json({ message: 'Query is required' });
+
+  let matches = [];
+
+  for (const state of rto_data) {
+    for (const district of state.districts) {
+      for (const rto of district.rtos || []) {
+        if (rto.rto.toLowerCase().includes(query)) {
+          matches.push({
+            state: state.state,
+            district: district.district,
+            rto: rto.rto,
+            rto_code: rto.rto_code,
+            address: rto.address && rto.address !== '-' ? rto.address : 'Not Available',
+            phone: rto.phone && rto.phone !== '-' ? rto.phone : null
+          });
+        }
+      }
+    }
+  }
+
+  res.json(matches);
+});
+
 
 app.listen(port, () => {
   console.log(`RTO API listening on port ${port}`);
