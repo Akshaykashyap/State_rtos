@@ -93,7 +93,7 @@ app.get('/api/rto/states/:stateName/rtocodes', (req, res) => {
 
 // Example: Get RTO by RTO code (if your JSON structure supports it)
 app.get('/api/rto/rtocodes/:rtoCode', (req, res) => {
-  const rtoCode = req.params.rtoCode;
+  const rtoCode = req.params.rtoCode.toLowerCase();
   let foundRto = null;
 
   for (const stateData of rto_data) {
@@ -168,5 +168,5 @@ app.get('/api/rto/search', (req, res) => {
 // app.listen(port, () => {
 //   console.log(`RTO API listening on port ${port}`);
 // });
-
+app.use(express.static('public'));
 module.exports = app;
