@@ -120,3 +120,5 @@ app.get('/api/rto/rtocodes/:rtoCode', (req, res) => {
 app.listen(port, () => {
   console.log(`RTO API listening on port ${port}`);
 });
+
+module.exports = app;
