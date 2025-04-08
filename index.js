@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const app = express();
-// const port = 3000;
+const port = 3000;
 
 let rto_data = []; 
 
@@ -163,12 +163,17 @@ app.get('/api/rto/search', (req, res) => {
 });
 
 // Optional: Route for root if not using index.html
+// app.get('/', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'public', 'index.html'));
+// });
+
+// Send index.html manually
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// app.listen(port, () => {
-//   console.log(`RTO API listening on port ${port}`);
-// });
+app.listen(port, () => {
+  console.log(`RTO API listening on port ${port}`);
+});
 
 module.exports = app;
