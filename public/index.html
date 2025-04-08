@@ -2,25 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>RTO Bharat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-image: url('bg.jpg'); 
-      background-position: center;
-      height: 100vh;
+      font-family: 'Inter', sans-serif;
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
       display: flex;
-      justify-content: center;
       align-items: center;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-shadow: 2px 2px 4px #000;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+      border-radius: 16px;
+      max-width: 700px;
+      width: 90%;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    .card h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #00ffcc;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 10px 0;
+      color: #ddd;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #00ffcc;
+      color: #000;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .card a:hover {
+      background-color: #00ccaa;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to RTO Bharat</h1>
+  <div class="card">
+    <h1>Welcome to RTO Bharat</h1>
+    <p>RTO Bharat is your one-stop destination to find accurate and up-to-date information about Regional Transport Offices (RTOs) across India.</p>
+    <p>Simply enter the RTO code (e.g., <strong>HP-01</strong>, <strong>DL-04</strong>, <strong>MH-12</strong>) to get instant results.</p>
+    <p>Keep track of your vehicle documents, know where your vehicle is registered, and stay informed — all in one place.</p>
+    <a href="api/rto/states/himachal%20Pradesh">Try a Sample Search → </a>
+  </div>
 </body>
 </html>

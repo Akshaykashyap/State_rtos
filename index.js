@@ -6,6 +6,7 @@ const app = express();
 
 let rto_data = []; 
 
+app.use(express.static(path.join(__dirname, 'public')));
 // Load RTO data from JSON file
 try {
   const data = fs.readFileSync(path.join(__dirname, 'rto_data.json'), 'utf8');
@@ -65,11 +66,8 @@ app.get('/api/rto/states/:stateName/districts/:districtName', (req, res) => {
 
 // New endpoint to get all RTO codes for a particular state
 app.get('/api/rto/states/:stateName/rtocodes', (req, res) => {
-    console.log("rtocodes route hit!"); 
     const stateName = req.params.stateName.toLowerCase();
-    console.log("stateName from URL:", stateName); 
     const stateData = rto_data.find(item => item.state.toLowerCase() === stateName);
-    console.log("stateData:", stateData); 
     if (stateData) {
         let allRtos = [];
         for (const district of stateData.districts) {
@@ -163,9 +161,13 @@ app.get('/api/rto/search', (req, res) => {
   res.json(matches);
 });
 
+// Optional: Route for root if not using index.html
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 // app.listen(port, () => {
 //   console.log(`RTO API listening on port ${port}`);
 // });
-app.use(express.static('public'));
+
 module.exports = app;
