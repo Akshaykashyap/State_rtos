@@ -78,7 +78,7 @@
       <strong><p>Search for any Indian RTO by code, district, or state. Get verified transport office information in seconds.</p></strong>
       <div class="card-layout">
         <div class="input-group mb-1">
-          <input type="text" class="form-control" id="rtoInput" placeholder="Enter RTO Code (e.g. MH-12) or District/State Name" />
+          <input type="text" class="form-control" id="rtoInput" placeholder="Enter RTO Code (e.g. MH-12)" />
           <button class="btn btn-primary" onclick="searchRTO()">Search</button>
         </div>
         <div id="loading" class="text-muted d-none">Loading...</div>
@@ -101,34 +101,39 @@
 
   <script>
     function searchRTO() {
-      const code = document.getElementById("rtoInput").value.trim();
-      if (!code) return;
+  let code = document.getElementById("rtoInput").value.trim();
 
-      document.getElementById("loading").classList.remove("d-none");
-      document.getElementById("rtoResult").innerHTML = "";
+  if (!code) return;
 
-      fetch(`/api/rto/rtocodes/${code}`)
-        .then((res) => res.json())
-        .then((data) => {
-          document.getElementById("loading").classList.add("d-none");
-          if (data.rto_code) {
-            document.getElementById("rtoResult").innerHTML = `
-              <div class="card p-3">
-                <p class="mb-1"><strong>RTO Name:</strong> ${data.rto}</p>
-                <p class="mb-1"><strong>RTO Code:</strong> ${data.rto_code}</p>
-                <p><strong>Address:</strong> ${data.address}</p>
-                <p><strong>Phone No:</strong> ${data.phone}</p>
-              </div>
-            `;
-          } else {
-            document.getElementById("rtoResult").innerHTML = `<p class="text-danger">No RTO found for this input.</p>`;
-          }
-        })
-        .catch(() => {
-          document.getElementById("loading").classList.add("d-none");
-          document.getElementById("rtoResult").innerHTML = `<p class="text-danger">Error fetching data.</p>`;
-        });
-    }
+  // ✅ Normalize input: remove spaces, convert to uppercase, insert hyphen
+  code = code.toUpperCase().replace(/\s+/g, "").replace(/^([A-Z]{2})(\d{2})$/, "$1-$2");
+
+  document.getElementById("loading").classList.remove("d-none");  
+  document.getElementById("rtoResult").innerHTML = "";
+
+  fetch(`/api/rto/rtocodes/${code}`)
+    .then((res) => res.json())
+    .then((data) => {
+      document.getElementById("loading").classList.add("d-none");
+      if (data.rto_code) {
+        document.getElementById("rtoResult").innerHTML = `
+          <div class="card p-3">
+            <p class="mb-1"><strong>RTO Name:</strong> ${data.rto}</p>
+            <p class="mb-1"><strong>RTO Code:</strong> ${data.rto_code}</p>
+            <p><strong>Address:</strong> ${data.address}</p>
+            <p><strong>Phone No:</strong> ${data.phone}</p>
+          </div>
+        `;
+      } else {
+        document.getElementById("rtoResult").innerHTML = `<p class="text-danger">No RTO found for this input.</p>`;
+      }
+    })
+    .catch(() => {
+      document.getElementById("loading").classList.add("d-none");
+      document.getElementById("rtoResult").innerHTML = `<p class="text-danger">Error fetching data.</p>`;
+    });
+}
+
 
     // function quickSearch(code) {
     //   document.getElementById("rtoInput").value = code;
