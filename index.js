@@ -7,6 +7,7 @@ const app = express();
 let rto_data = []; 
 
 app.use(express.static(path.join(__dirname, 'public')));
+
 // Load RTO data from JSON file
 try {
   const data = fs.readFileSync(path.join(__dirname, 'rto_data.json'), 'utf8');
@@ -161,14 +162,9 @@ app.get('/api/rto/search', (req, res) => {
   res.json(matches);
 });
 
-// // Optional: Route for root if not using index.html
-// app.get('/', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'public', 'index.html'));
-// });
-
-// Route for homepage
+// Optional: Route for root if not using index.html
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // app.listen(port, () => {
