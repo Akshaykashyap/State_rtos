@@ -161,9 +161,14 @@ app.get('/api/rto/search', (req, res) => {
   res.json(matches);
 });
 
-// Optional: Route for root if not using index.html
+// // Optional: Route for root if not using index.html
+// app.get('/', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'public', 'index.html'));
+// });
+
+// Route for homepage
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // app.listen(port, () => {
