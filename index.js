@@ -90,17 +90,26 @@ app.get('/api/rto/states/:stateName/rtocodes', (req, res) => {
     }
 });
 
+
 app.get('/api/rto/rtocodes/:rtoCode', (req, res) => {
-  const rtoCode = req.params.rtoCode.toLowerCase(); // make it case-insensitive
+  // Normalize user input: remove spaces and dashes, make lowercase
+  const inputCode = req.params.rtoCode.replace(/[\s-]/g, '').toLowerCase();
   let foundRto = null;
 
   for (const stateData of rto_data) {
     for (const districtData of stateData.districts) {
       if (districtData.rtos) {
         for (const rto of districtData.rtos) {
-          if (rto.rto_code && rto.rto_code.toLowerCase() === rtoCode) {
-            foundRto = rto;
-            break;
+          if (rto.rto_code) {
+            const normalizedRtoCode = rto.rto_code.replace(/[\s-]/g, '').toLowerCase();
+            if (normalizedRtoCode === inputCode) {
+              foundRto = {
+                ...rto,
+                state: stateData.state,
+                district: districtData.district,
+              };
+              break;
+            }
           }
         }
       }
@@ -115,6 +124,7 @@ app.get('/api/rto/rtocodes/:rtoCode', (req, res) => {
     res.status(404).json({ message: 'RTO code not found' });
   }
 });
+
 
 // GET /api/rto/states/:stateName/districts/:districtName/rtos
 app.get('/api/rto/states/:stateName/districts/:districtName/rtos', (req, res) => {
