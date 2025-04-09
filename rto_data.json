@@ -710,7 +710,7 @@
             "rto": "ARTO Surat (Pal)",
             "rto_code": "GJ-28",
             "address": "Surat Rural, Gujarat - 395006",
-            "phone": "NIL"
+            "phone": "Not Available"
           },
           {
             "rto": "ARTO Ahva-Dang",
@@ -2851,7 +2851,7 @@
             "rto": "East Khasi Hills RTO",
             "rto_code": "ML-05",
             "address": "East Khasi Hills, Meghalaya",
-            "phone": "NIL"
+            "phone": "Not Available"
           }
         ]
       },
@@ -2862,7 +2862,7 @@
             "rto": "East Garo Hills RTO",
             "rto_code": "ML-07",
             "address": "East Garo Hills, Meghalaya",
-            "phone": "NIL"
+            "phone": "Not Available"
           }
         ]
       },
@@ -2873,7 +2873,7 @@
             "rto": "Jowai RTO",
             "rto_code": "ML-04",
             "address": "Jowai, Jaintia Hills District - 793150",
-            "phone": "NIL"
+            "phone": "Not Available"
           }
         ]
       },
@@ -2884,7 +2884,7 @@
             "rto": "Ri Bhoi RTO",
             "rto_code": "ML-10",
             "address": "Nongpoh, Ri Bhoi - 793102",
-            "phone": "NIL"
+            "phone": "Not Available"
           }
         ]
       },
@@ -2895,7 +2895,7 @@
             "rto": "South Garo Hills RTO",
             "rto_code": "ML-09",
             "address": "Baghmara, South Garo Hills - 794102",
-            "phone": "NIL"
+            "phone": "Not Available"
           }
         ]
       },
@@ -2906,7 +2906,7 @@
             "rto": "West Garo Hills RTO",
             "rto_code": "ML-08",
             "address": "Tura, West Garo Hills - 794001",
-            "phone": "NIL"
+            "phone": "Not Available"
           }
         ]
       },
@@ -2917,7 +2917,7 @@
             "rto": "West Khasi Hills RTO",
             "rto_code": "ML-06",
             "address": "Nongstoin, West Khasi Hills - 793119",
-            "phone": "NIL"
+            "phone": "Not Available"
           }
         ]
       }
@@ -5187,7 +5187,7 @@
             "rto": "Chandigarh RTO",
             "rto_code": "PB-01",
             "address": "Chandigarh, Punjab - 160017",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -5228,7 +5228,7 @@
             "rto": "Khadoor Sahib RTO",
             "rto_code": "PB-63",
             "address": "Khadoor Sahib, Amritsar, Punjab - 143117",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -5251,7 +5251,7 @@
             "rto": "Talwandi Sabo RTO",
             "rto_code": "PB-45",
             "address": "Talwandi Sabo, Bathinda, Punjab - 151302",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -5326,7 +5326,7 @@
             "rto": "Dhar Kalan RTO",
             "rto_code": "PB-68",
             "address": "Dhar Kalan, Punjab - 145022",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -5407,13 +5407,13 @@
             "rto": "Sultanpur Lodhi RTO",
             "rto_code": "PB-41",
             "address": "Sultanpur Lodhi, Kapurthala, Punjab - 144626",
-            "phone": "Nil"
+            "phone": "Not Available"
           },
           {
             "rto": "Bhulath RTO",
             "rto_code": "PB-57",
             "address": "Bholath, Kapurthala, Punjab - 144622",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -5454,7 +5454,7 @@
             "rto": "Payal RTO",
             "rto_code": "PB-55",
             "address": "Payal, Ludhiana, Punjab - 141416",
-            "phone": "Nil"
+            "phone": "Not Available"
           },
           {
             "rto": "Raikot RTO",
@@ -5466,7 +5466,7 @@
             "rto": "Lehra RTO",
             "rto_code": "PB-75",
             "address": "Lehra, Ludhiana, Punjab - 148031",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -5495,13 +5495,13 @@
             "rto": "Samana (Patiala East) RTO",
             "rto_code": "PB-42",
             "address": "Samana, Patiala, Punjab - 147101",
-            "phone": "Nil"
+            "phone": "Not Available"
           },
           {
             "rto": "Patran (Patiala East) RTO",
             "rto_code": "PB-72",
             "address": "Patran, Patiala, Punjab - 147105",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -5524,7 +5524,7 @@
             "rto": "Chamkaur Sahib RTO",
             "rto_code": "PB-71",
             "address": "Chamkaur Sahib, Rupnagar, Punjab - 140112",
-            "phone": "Nil"
+            "phone": "Not Available"
           },
           {
             "rto": "Nangal RTO",
@@ -5571,7 +5571,7 @@
             "rto": "Ahmedgarh RTO",
             "rto_code": "PB-76",
             "address": "Ahmedgarh, Sangrur, Punjab - 148021",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -5582,7 +5582,7 @@
             "rto": "Balachaur RTO",
             "rto_code": "PB-20",
             "address": "Balachaur, Nawanshahr, Punjab - 144521",
-            "phone": "Nil"
+            "phone": "Not Available"
           },
           {
             "rto": "Nawanshahr RTO",
@@ -5679,7 +5679,7 @@
             "rto": "Khamano RTO",
             "rto_code": "PB-49",
             "address": "Khamanon, Punjab - 141801",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -5701,7 +5701,7 @@
             "rto": "Payal RTO",
             "rto_code": "PB-55",
             "address": "Payal, Ludhiana, Punjab - 141416",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -5712,7 +5712,7 @@
             "rto": "Bhulath RTO",
             "rto_code": "PB-57",
             "address": "Bholath, Kapurthala, Punjab - 144622",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -5745,7 +5745,7 @@
             "rto": "Lehra RTO",
             "rto_code": "PB-75",
             "address": "Lehra, Ludhiana, Punjab - 148031",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       }
@@ -7782,7 +7782,7 @@
             "rto": "Kunnathur RTO",
             "rto_code": "TN-85",
             "address": "Kunnathur, Kanchipuram, Chennai - 600069",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -7982,7 +7982,7 @@
             "rto": "Dharapuram RTO",
             "rto_code": "TN-78",
             "address": "Dharapuram, Erode - 638656",
-            "phone": "Nil"
+            "phone": "Not Available"
           },
           {
             "rto": "Erode West RTO",
@@ -9814,7 +9814,7 @@
             "rto": "Wokha RTO",
             "rto_code": "NL-05",
             "address": "Near Police Point, Wokha, Nagaland - 797001",
-            "phone": "NIL"
+            "phone": "Not Available"
           }
         ]
       },
@@ -9836,7 +9836,7 @@
             "rto": "Dimapur RTO",
             "rto_code": "NL-07",
             "address": "Dimapur, Nagaland - 797112",
-            "phone": "NIL"
+            "phone": "Not Available"
           }
         ]
       },
@@ -9847,7 +9847,7 @@
             "rto": "Phek RTO",
             "rto_code": "NL-08",
             "address": "Phek, Nagaland - 797107",
-            "phone": "NIL"
+            "phone": "Not Available"
           }
         ]
       }
@@ -9923,31 +9923,31 @@
             "rto": "Shantinagar RTO",
             "rto_code": "KA-57",
             "address": "Shanthinagar, Bangalore - 560027",
-            "phone": "Nil"
+            "phone": "Not Available"
           },
           {
             "rto": "Chamrajpet RTO",
             "rto_code": "KA-58",
             "address": "Chamrajpet, Bangalore - 560019",
-            "phone": "Nil"
+            "phone": "Not Available"
           },
           {
             "rto": "Banashankari RTO",
             "rto_code": "KA-59",
             "address": "Banashankari, Bangalore - 560050",
-            "phone": "Nil"
+            "phone": "Not Available"
           },
           {
             "rto": "RT Nagar RTO",
             "rto_code": "KA-60",
             "address": "RT Nagar, Bangalore - 560032",
-            "phone": "Nil"
+            "phone": "Not Available"
           },
           {
             "rto": "Marathallli RTO",
             "rto_code": "KA-62",
             "address": "Marathallli, Bangalore - 560037",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -9970,7 +9970,7 @@
             "rto": "Madhugiri RTO",
             "rto_code": "KA-64",
             "address": "Madhugiri, Tumkur - 572132",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10122,7 +10122,7 @@
             "rto": "Tarikere RTO",
             "rto_code": "KA-66",
             "address": "Tarikere, Chikmagalur - 577228",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10145,7 +10145,7 @@
             "rto": "Surathkal RTO",
             "rto_code": "KA-62",
             "address": "Surathkal, Dakshina Kannada - 575014",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10692,7 +10692,7 @@
             "rto": "Udalguri RTO",
             "rto_code": "AS-27",
             "address": "Udalguri, Assam",
-            "phone": "NIL",
+            "phone": "Not Available",
             "working_hours": "9:30 AM - 6:30 PM"
           }
         ]
@@ -10721,7 +10721,7 @@
             "rto": "Adilabad - Mancherial / Nirmal RTO",
             "rto_code": "AP-01",
             "address": "Adilabad, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10732,7 +10732,7 @@
             "rto": "Anantapur - Hindupur RTO",
             "rto_code": "AP-02",
             "address": "Anantapur, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10743,7 +10743,7 @@
             "rto": "Chittoor - Tirupati / Madanapalle RTO",
             "rto_code": "AP-03",
             "address": "Chittoor, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10754,7 +10754,7 @@
             "rto": "Kadapa - Proddatur RTO",
             "rto_code": "AP-04",
             "address": "Kadapa, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10765,7 +10765,7 @@
             "rto": "Kakinada / Amalapuram / Rajahmundry RTO",
             "rto_code": "AP-05",
             "address": "Kakinada, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10776,7 +10776,7 @@
             "rto": "Guntur - Piduguralla / Narasaraopet / Repalle RTO",
             "rto_code": "AP-07",
             "address": "Guntur, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10787,7 +10787,7 @@
             "rto": "Hyderabad Central (Khairtabad) RTO",
             "rto_code": "AP-09",
             "address": "Hyderabad, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10798,7 +10798,7 @@
             "rto": "Hyderabad North (Secunderabad) RTO",
             "rto_code": "AP-10",
             "address": "Hyderabad, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10809,7 +10809,7 @@
             "rto": "Hyderabad East (Malakpet) RTO",
             "rto_code": "AP-11",
             "address": "Hyderabad, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10820,7 +10820,7 @@
             "rto": "Hyderabad South (Kisanbagh) RTO",
             "rto_code": "AP-12",
             "address": "Hyderabad, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10831,7 +10831,7 @@
             "rto": "Hyderabad West (Mehdipatnam) RTO",
             "rto_code": "AP-13",
             "address": "Hyderabad, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10842,7 +10842,7 @@
             "rto": "Karimnagar - Jagtial / Peddapalli RTO",
             "rto_code": "AP-15",
             "address": "Karimnagar, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10853,31 +10853,31 @@
             "rto": "Vijayawada RTO",
             "rto_code": "AP-16",
             "address": "Vijayawada, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           },
           {
             "rto": "Gudivada RTO",
             "rto_code": "AP-16",
             "address": "Gudivada, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           },
           {
             "rto": "Machilipatnam RTO",
             "rto_code": "AP-16",
             "address": "Machilipatnam, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           },
           {
             "rto": "Nandigama RTO",
             "rto_code": "AP-16",
             "address": "Nandigama, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           },
           {
             "rto": "Nuzvid RTO",
             "rto_code": "AP-16",
             "address": "Nuzvid, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10888,7 +10888,7 @@
             "rto": "Khammam - Kothagudem / Sathupally / Yellandu RTO",
             "rto_code": "AP-20",
             "address": "Khammam, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10899,7 +10899,7 @@
             "rto": "Kurnool - Adoni / Nandyal RTO",
             "rto_code": "AP-21",
             "address": "Kurnool, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10910,7 +10910,7 @@
             "rto": "Mahbubnagar - Pebbair / Gadwal RTO",
             "rto_code": "AP-22",
             "address": "Mahbubnagar, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10921,7 +10921,7 @@
             "rto": "Medak - Sangareddy / Siddipet / Patancheru RTO",
             "rto_code": "AP-23",
             "address": "Medak, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10932,7 +10932,7 @@
             "rto": "Nalgonda - Suryapet / Miryalaguda / Bhongir / Bibinagar RTO",
             "rto_code": "AP-24",
             "address": "Nalgonda, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10943,7 +10943,7 @@
             "rto": "Nizamabad - Kamareddy RTO",
             "rto_code": "AP-25",
             "address": "Nizamabad, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10954,7 +10954,7 @@
             "rto": "Nellore - Kavali / Gudur / Sullurpeta / Naidupet RTO",
             "rto_code": "AP-26",
             "address": "Nellore, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10965,7 +10965,7 @@
             "rto": "Ongole - Chirala / Markapur RTO",
             "rto_code": "AP-27",
             "address": "Ongole, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10976,13 +10976,13 @@
             "rto": "Attapur / Kukatpally / Medchal RTO",
             "rto_code": "AP-28",
             "address": "Hyderabad, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           },
           {
             "rto": "Uppal Kalan / Ibrahimpatnam RTO",
             "rto_code": "AP-29",
             "address": "Hyderabad, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -10993,7 +10993,7 @@
             "rto": "Srikakulam -Tekkali / Palasa / Sompeta / Ichchapuram / Kaviti RTO",
             "rto_code": "AP-30",
             "address": "Srikakulam, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -11004,7 +11004,7 @@
             "rto": "Visakhapatnam - Gajuwaka / Anakapalli RTO",
             "rto_code": "AP-31",
             "address": "Visakhapatnam, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -11015,7 +11015,7 @@
             "rto": "Vizianagaram RTO",
             "rto_code": "AP-35",
             "address": "Vizianagaram, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -11026,7 +11026,7 @@
             "rto": "Warangal - Jangaon / Mahabubabad RTO",
             "rto_code": "AP-36",
             "address": "Warangal, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
           }
         ]
       },
@@ -11037,7 +11037,454 @@
             "rto": "Eluru / Jangareddygudem / Kovvur / Tadepalligudem / Tanuku /Bhimavaram / Palakollu / Chintalapudi RTO",
             "rto_code": "AP-37",
             "address": "Eluru, Andhra Pradesh",
-            "phone": "Nil"
+            "phone": "Not Available"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Andaman and Nicobar Islands",
+    "districts": [
+      {
+        "district": "Andaman",
+        "rtos": [
+          {
+            "rto": "RTO Office Port Blair - Andaman District",
+            "rto_code": "AN-01",
+            "address": "Tagore Road, Port Blair, Andaman District - 744101",
+            "phone": "+(91)-3192-230225"
+          }
+        ]
+      },
+      {
+        "district": "Nicobar",
+        "rtos": [
+          {
+            "rto": "RTO Office Car Nicobar - Nicobar District",
+            "rto_code": "AN-02",
+            "address": "Nicobar District, Andaman and Nicobar Islands",
+            "phone": "Not Available"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Chandigarh",
+    "districts": [
+      {
+        "district": "Chandigarh",
+        "rtos": [
+          {
+            "rto_code": "CH-01",
+            "rto": "Chandigarh",
+            "address": "Shimla Book House, 17D, Sector 17, Chandigarh, 160017",
+            "phone": "+91-172-2700341"
+          },
+          {
+            "rto_code": "CH-02",
+            "rto": "Chandigarh",
+            "address": "Sector 17, Chandigarh - 160017",
+            "phone": "+91-172-2700341"
+          },
+          {
+            "rto_code": "CH-03",
+            "rto": "Chandigarh",
+            "address": "Sector 17, Chandigarh - 160017",
+            "phone": "+91-172-2700341"
+          },
+          {
+            "rto_code": "CH-04",
+            "rto": "Chandigarh",
+            "address": "Sector 17, Chandigarh - 160017",
+            "phone": "+91-172-2700341"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Dadra and Nagar Haveli and Daman and Diu",
+    "districts": [
+      {
+        "district": "Daman",
+        "rtos": [
+          {
+            "rto": "Daman RTO",
+            "rto_code": "DD-01",
+            "address": "Daman, Dadra and Nagar Haveli and Daman and Diu",
+            "phone": "Not Available"
+          }
+        ]
+      },
+      {
+        "district": "Diu",
+        "rtos": [
+          {
+            "rto": "Diu RTO",
+            "rto_code": "DD-02",
+            "address": "Diu, Dadra and Nagar Haveli and Daman and Diu",
+            "phone": "Not Available"
+          }
+        ]
+      },
+      {
+        "district": "Dadra and Nagar Haveli",
+        "rtos": [
+          {
+            "rto": "Silvassa RTO",
+            "rto_code": "DN-01",
+            "address": "Silvassa, Dadra and Nagar Haveli and Daman and Diu",
+            "phone": "Not Available"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Delhi",
+    "districts": [
+      {
+        "district": "North Delhi",
+        "rtos": [
+          {
+            "rto": "RTO Office North Delhi - Mall Road",
+            "rto_code": "DL-01",
+            "address": "Mall Road, North Delhi, Delhi - 110007",
+            "phone": "+(91)-11-23819191 / 92"
+          }
+        ]
+      },
+      {
+        "district": "New Delhi",
+        "rtos": [
+          {
+            "rto": "RTO Office New Delhi - Tilak Marg",
+            "rto_code": "DL-02",
+            "address": "Tilak Marg, New Delhi - 110001",
+            "phone": "+(91)-11-23378886 / 77"
+          }
+        ]
+      },
+      {
+        "district": "South Delhi",
+        "rtos": [
+          {
+            "rto": "RTO Office South Delhi - Sheikh Sarai",
+            "rto_code": "DL-03",
+            "address": "DDA Market, Sheikh Sarai, South Delhi, Delhi - 110017",
+            "phone": "+(91)-11-29259800 / 29253535"
+          }
+        ]
+      },
+      {
+        "district": "West Delhi",
+        "rtos": [
+          {
+            "rto": "RTO Office West Delhi - Janakpuri",
+            "rto_code": "DL-04",
+            "address": "Janakpuri, West Delhi, Delhi - 110058",
+            "phone": "+(91)-11-25551618 / 25531002"
+          }
+        ]
+      },
+      {
+        "district": "East Delhi",
+        "rtos": [
+          {
+            "rto": "RTO Office East Delhi - Loni Road",
+            "rto_code": "DL-05",
+            "address": "Loni Road, Shahdara, East Delhi, Delhi - 110032",
+            "phone": "+(91)-11-22813475"
+          },
+          {
+            "rto": "RTO Office East Delhi - Mayur Vihar",
+            "rto_code": "DL-07",
+            "address": "Mayur Vihar, East Delhi, Delhi - 110091",
+            "phone": "+(91)-11-22753800"
+          },
+          {
+            "rto": "RTO Office East Delhi - Surajmal Vihar / Shahdara",
+            "rto_code": "DL-13",
+            "address": "Surajmal Vihar, East Delhi, Delhi - 110092",
+            "phone": "+(91)-11-22383900"
+          }
+        ]
+      },
+      {
+        "district": "Central Delhi",
+        "rtos": [
+          {
+            "rto": "RTO Office Central Delhi - Sarai Kale Khan",
+            "rto_code": "DL-06",
+            "address": "Sarai Kale Khan, Delhi",
+            "phone": "+(91)-11-24351100"
+          }
+        ]
+      },
+      {
+        "district": "North West Delhi",
+        "rtos": [
+          {
+            "rto": "RTO Office North West Delhi - Wazir Pur",
+            "rto_code": "DL-08",
+            "address": "Wazirpur, North West Delhi, Delhi - 110052",
+            "phone": "+(91)-11-27217642"
+          },
+          {
+            "rto": "RTO Office North West Delhi - Rohini",
+            "rto_code": "DL-11",
+            "address": "Rohini, North West Delhi, Delhi - 110085",
+            "phone": "+(91)-11-27563535"
+          }
+        ]
+      },
+      {
+        "district": "South West Delhi",
+        "rtos": [
+          {
+            "rto": "RTO Office South West Delhi - Janakpuri / Palam",
+            "rto_code": "DL-09",
+            "address": "Palam, Janakpuri, Delhi - 110058",
+            "phone": "+(91)-11-25624064 / 25163615"
+          },
+          {
+            "rto": "RTO Office South West Delhi - Vasant Vihar",
+            "rto_code": "DL-12",
+            "address": "Vasant Vihar, South West Delhi, Delhi - 110057",
+            "phone": "+(91)-11-26146498"
+          }
+        ]
+      },
+      {
+        "district": "West Delhi",
+        "rtos": [
+          {
+            "rto": "RTO Office West Delhi - Raja Garden",
+            "rto_code": "DL-10",
+            "address": "Raja Garden, Delhi - 110027",
+            "phone": "+(91)-11-25163616"
+          }
+        ]
+      },
+      {
+        "district": "NCR (Haryana)",
+        "rtos": [
+          {
+            "rto": "RTO Office Sonipat due to the NCR",
+            "rto_code": "DL-14",
+            "address": "Sonipat, Haryana - 131001",
+            "phone": "+91-130-2222100"
+          },
+          {
+            "rto": "RTO Office Gurgaon due to the NCR",
+            "rto_code": "DL-15",
+            "address": "Gurgaon, Haryana - 122001",
+            "phone": "Not Available"
+          },
+          {
+            "rto": "RTO Office Faridabad due to the NCR",
+            "rto_code": "DL-16",
+            "address": "Faridabad, Haryana - 121001",
+            "phone": "Not Available"
+          }
+        ]
+      },
+      {
+        "district": "NCR (Uttar Pradesh)",
+        "rtos": [
+          {
+            "rto": "RTO Office Noida due to the NCR",
+            "rto_code": "DL-17",
+            "address": "Noida, Uttar Pradesh - 201301",
+            "phone": "Not Available"
+          },
+          {
+            "rto": "RTO Office Ghaziabad due to the NCR",
+            "rto_code": "DL-18",
+            "address": "Ghaziabad, Uttar Pradesh - 201002",
+            "phone": "Not Available"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Ladakh",
+    "districts": [
+      {
+        "district": "Leh",
+        "rtos": [
+          {
+            "rto": "Leh RTO",
+            "rto_code": "LA-01",
+            "address": "Leh, Ladakh",
+            "phone": "Not Available"
+          }
+        ]
+      },
+      {
+        "district": "Kargil",
+        "rtos": [
+          {
+            "rto": "Kargil RTO",
+            "rto_code": "LA-02",
+            "address": "Kargil, Ladakh",
+            "phone": "Not Available"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Lakshadweep",
+    "districts": [
+      {
+        "district": "Kavaratti",
+        "rtos": [
+          {
+            "rto": "Kavaratti RTO Office",
+            "rto_code": "LD-01",
+            "address": "Kavaratti, Lakshadweep - 682555",
+            "phone": "+(91)-4867-22018"
+          }
+        ]
+      },
+      {
+        "district": "Agatti",
+        "rtos": [
+          {
+            "rto": "Agatti RTO Office",
+            "rto_code": "LD-02",
+            "address": "Agatti, Lakshadweep - 682553",
+            "phone": "Not Available"
+          }
+        ]
+      },
+      {
+        "district": "Amini",
+        "rtos": [
+          {
+            "rto": "Amini RTO Office",
+            "rto_code": "LD-03",
+            "address": "Amini, Lakshadweep - 682552",
+            "phone": "Not Available"
+          }
+        ]
+      },
+      {
+        "district": "Androth",
+        "rtos": [
+          {
+            "rto": "Androth RTO Office",
+            "rto_code": "LD-04",
+            "address": "Androth, Lakshadweep - 682551",
+            "phone": "Not Available"
+          }
+        ]
+      },
+      {
+        "district": "Kadmat",
+        "rtos": [
+          {
+            "rto": "Kadmat RTO Office",
+            "rto_code": "LD-05",
+            "address": "Kadamat, Lakshadweep - 682556",
+            "phone": "Not Available"
+          }
+        ]
+      },
+      {
+        "district": "Kiltan",
+        "rtos": [
+          {
+            "rto": "Kiltan RTO Office",
+            "rto_code": "LD-06",
+            "address": "Kiltan, Lakshadweep - 682558",
+            "phone": "Not Available"
+          }
+        ]
+      },
+      {
+        "district": "Chetlat",
+        "rtos": [
+          {
+            "rto": "Chetlat RTO Office",
+            "rto_code": "LD-07",
+            "address": "Chetlat, Lakshadweep - 682554",
+            "phone": "Not Available"
+          }
+        ]
+      },
+      {
+        "district": "Kalpeni",
+        "rtos": [
+          {
+            "rto": "Kalpeni RTO Office",
+            "rto_code": "LD-08",
+            "address": "Kalpeni, Lakshadweep - 682557",
+            "phone": "Not Available"
+          }
+        ]
+      },
+      {
+        "district": "Minicoy",
+        "rtos": [
+          {
+            "rto": "Minicoy RTO Office",
+            "rto_code": "LD-09",
+            "address": "Minicoy, Lakshadweep - 682559",
+            "phone": "Not Available"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Puducherry",
+    "districts": [
+      {
+        "district": "Puducherry",
+        "rtos": [
+          {
+            "rto": "Pondicherry",
+            "rto_code": "PY-01",
+            "address": "100 Feet Road, Opposite Bus Stop, Mudaliarpet, Puducherry - 605004",
+            "phone": "+(91)-413-2280380 / 2280170"
+          }
+        ]
+      },
+      {
+        "district": "Karaikal",
+        "rtos": [
+          {
+            "rto": "Karaikal",
+            "rto_code": "PY-02",
+            "address": "Civil Station, Karaikal - 609602",
+            "phone": "+(91)-4368-222729"
+          }
+        ]
+      },
+      {
+        "district": "Mahe",
+        "rtos": [
+          {
+            "rto": "Mahe",
+            "rto_code": "PY-03",
+            "address": "Mahe, Puducherry - 673310",
+            "phone": "+(91)-490-2332560"
+          }
+        ]
+      },
+      {
+        "district": "Yanam",
+        "rtos": [
+          {
+            "rto": "Yanam",
+            "rto_code": "PY-04",
+            "address": "Yanam, Puducherry - 533464",
+            "phone": "+(91)-884-2321215"
           }
         ]
       }
