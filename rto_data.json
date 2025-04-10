@@ -1368,6 +1368,12 @@
             "rto_code": "HP-99",
             "address": "Regional Transport Office, Kotkhai, Himachal Pradesh",
             "phone": "Not Available"
+          },
+          {
+            "rto": "RTO Rampur",
+            "rto_code": "HP-92",
+            "address": "Regional Transport Officer Rampur Distt Shimla-172001", 
+            "phone": "01782-234759"    
           }
         ]
       },
@@ -1787,6 +1793,12 @@
           "rto_code": "HP-86",
           "address": "Regional Transport Office, Swarghat, Bilaspur, Himachal Pradesh",
           "phone": "Not Available"
+        },
+        {
+          "rto": "RLA (Registering and Licensing Authority) Shri Naina Devi Ji Swarghat",
+          "rto_code": "HP-91",
+          "address": "Sub DivisionalOfficer(C) Naina Devi Ji at Swarghat DisttBilaspur-174011, ", 
+          "phone": "01978-284094"    
         }
       ]
     },
@@ -1821,12 +1833,6 @@
           "rto": "RLA (Registering and Licensing Authority) Nadaun",
           "rto_code": "HP-55",
           "address": "Regional Transport Office, Bhoranj, Himachal Pradesh",
-          "phone": "Not Available"
-        },
-        {
-          "rto": "RTO Nahan",
-          "rto_code": "HP-71",
-          "address": "Regional Transport Office-II, Hamirpur, Himachal Pradesh",
           "phone": "Not Available"
         }
       ]
@@ -2017,6 +2023,12 @@
           "rto_code": "HP-42-02",
           "address": "Office of the Sub Divisional Officer (Civil), Udaipur, Distt. Lahaul & Spiti-175138",
           "phone": "01909-242001"
+        },
+        {
+          "rto": "RTO Nahan",
+          "rto_code": "HP-71",
+          "address": "Regional Transport Office-II, Hamirpur, Himachal Pradesh",
+          "phone": "Not Available"
         }
       ]
     }
