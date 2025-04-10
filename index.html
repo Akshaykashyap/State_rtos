@@ -179,8 +179,7 @@
         </p>
         <p>
           Simply enter one or two RTO codes (e.g., <strong>HP-01</strong>,
-          <strong>DL-04 MH-12</strong>), State (e.g.,
-          <strong>Maharashtra</strong>), or District (e.g.,
+          <strong>DL-04 MH-12</strong>), or District (e.g.,
           <strong>Pune</strong>) to get instant results.
         </p>
         <p>
@@ -251,9 +250,9 @@
 
         for (const q of queries) {
           const normalizedCodeMatch = q
-            .toUpperCase()
-            .replace(/\s+/g, "")
-            .match(/^([A-Z]{2})(\d{2})$/);
+  .toUpperCase()
+  .replace(/[\s\-]+/g, "") // Remove both spaces and hyphens
+  .match(/^([A-Z]{2})(\d{2})$/);
           if (normalizedCodeMatch) {
             const normalizedCode = `${normalizedCodeMatch[1]}-${normalizedCodeMatch[2]}`;
             fetchPromises.push(
