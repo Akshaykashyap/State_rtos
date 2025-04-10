@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Search for any Indian RTO by code, district, or state. Get accurate transport office information."
+      content="Search for any Indian RTO by code, or district, Get accurate transport office information."
     />
     <meta
       property="og:title"
@@ -118,6 +118,10 @@
         overflow: hidden;
         transition: height 0.3s ease-in-out;
       }
+      .result-box strong {
+        display: inline-block;
+        width: 100px;
+      }
 
       .result-box.has-results {
         height: 200px;
@@ -130,10 +134,16 @@
         border-radius: 8px;
         box-shadow: none;
         text-align: left;
+        box-shadow: inset 0 -.8em 2em rgb(0 204 170 / 30%), 0 0 0 0px white, 0.3em 0.3em .5em rgb(200 0 0 / 10%);
       }
-
+      .result-box .text-danger {
+        display: block;
+      }
       .result-box p {
         margin-bottom: 8px;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        text-wrap: balance;
       }
 
       .text-danger {
