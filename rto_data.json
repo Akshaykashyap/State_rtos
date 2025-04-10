@@ -5748,6 +5748,51 @@
             "phone": "Not Available"
           }
         ]
+      },
+      {
+        "district": "Mohali",
+        "rtos": [
+          {
+            "rto": "Kharar RTO",
+            "rto_code": "PB-27",
+            "address": "Kharar, Mohali, Punjab - 140301",
+            "phone": "+91-160-2280222"
+          },
+          {
+            "rto": "Mohali RTO",
+            "rto_code": "PB-65",
+            "address": "Sector 62, SAS Nagar, Mohali, Punjab - 160062",
+            "phone": "+91-172-2219022"
+          },
+          {
+            "rto": "Dera Bassi RTO",
+            "rto_code": "PB-70",
+            "address": "Dera Bassi, Mohali, Punjab - 140507",
+            "phone": "+91-1762-276002"
+          }
+        ]
+      },
+      {
+        "district": "SBS Nagar (Nawanshahr)",
+        "rtos": [
+          {
+            "rto": "Banga RTO",
+            "rto_code": "PB-58",
+            "address": "Banga, SBS Nagar, Punjab - 144505",
+            "phone": "Not Available"
+          }
+        ]
+      },
+      {
+        "district": "Barnala",
+        "rtos": [
+          {
+            "rto": "Tapa RTO",
+            "rto_code": "PB-62",
+            "address": "Tapa, Barnala, Punjab - 148108",
+            "phone": "Not Available"
+          }
+        ]
       }
     ]
   },
