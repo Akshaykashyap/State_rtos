@@ -1,144 +1,340 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Search for any Indian RTO by code, district, or state. Get accurate transport office information." />
- <meta property="og:title" content="RTO Bharat - India's RTO Search Portal" />
- <meta property="og:image" content="/thumbnail.png" />
-  <title>RTO Bharat</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-      background: url('/bg.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-  
-    .card {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 40px;
-      border-radius: 16px;
-      max-width: 700px;
-      width: 90%;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-      text-align: center;
-    }
-
-    .card h1 {
-      font-size: 32px;
-      margin-bottom: 20px;
-      color: #00ffcc;
-    }
-
-    .card p {
-      font-size: 16px;
-      line-height: 1.6;
-      margin: 10px 0;
-      color: #ddd;
-    }
-
-    .card a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: #00ffcc;
-      color: #000;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    .card a:hover {
-      background-color: #00ccaa;
-    }
-  </style>
-</head>
-<body>
-  <div class="main-wrapper-top">
-  <div class="card">
-    <h1>Welcome to RTO Bharat</h1>
-    <p>RTO Bharat is your one-stop destination to find accurate and up-to-date information about Regional Transport Offices (RTOs) across India.</p>
-    <p>Simply enter the RTO code (e.g., <strong>HP-01</strong>, <strong>DL-04</strong>, <strong>MH-12</strong>) to get instant results.</p>
-    <p>Keep track of your vehicle documents, know where your vehicle is registered, and stay informed — all in one place.</p>
-    <a href="api/rto/states/himachal%20Pradesh">Try a Sample Search → </a>
-  </div>
-  </div>
-  <div class="main-wrapper-bottom">
-  <div class="card">
-    <div class="container text-center search-section">
-      <strong><p>Search for any Indian RTO by code, district, or state. Get verified transport office information in seconds.</p></strong>
-      <div class="card-layout">
-        <div class="input-group mb-1">
-          <input type="text" class="form-control" id="rtoInput" placeholder="Enter RTO Code (e.g. MH-12)" />
-          <button class="btn btn-primary" onclick="searchRTO()">Search</button>
-        </div>
-        <div id="loading" class="text-muted d-none">Loading...</div>
-        <div id="rtoResult" class="result-box mt-3"></div>
-      </div>
-  
-      <!-- <div class="mt-5 popular-searches">
-        <h5>Popular Searches</h5>
-        <ul class="list-inline">
-          <li class="list-inline-item"><a href="#" onclick="quickSearch('DL-01')">DL-01 (Delhi)</a></li>
-          <li class="list-inline-item"><a href="#" onclick="quickSearch('MH-12')">MH-12 (Pune)</a></li>
-          <li class="list-inline-item"><a href="#" onclick="quickSearch('KA-01')">KA-01 (Bengaluru)</a></li>
-          <li class="list-inline-item"><a href="#" onclick="quickSearch('TN-07')">TN-07 (Chennai)</a></li>
-        </ul>
-      </div> -->
-    </div>
-  </div>
-  </div>
-
-
-  <script>
-    function searchRTO() {
-  let code = document.getElementById("rtoInput").value.trim();
-
-  if (!code) return;
-
-  // ✅ Normalize input: remove spaces, convert to uppercase, insert hyphen
-  code = code.toUpperCase().replace(/\s+/g, "").replace(/^([A-Z]{2})(\d{2})$/, "$1-$2");
-
-  document.getElementById("loading").classList.remove("d-none");  
-  document.getElementById("rtoResult").innerHTML = "";
-
-  fetch(`/api/rto/rtocodes/${code}`)
-    .then((res) => res.json())
-    .then((data) => {
-      document.getElementById("loading").classList.add("d-none");
-      if (data.rto_code) {
-        document.getElementById("rtoResult").innerHTML = `
-          <div class="card p-3">
-            <p class="mb-1"><strong>RTO Name:</strong> ${data.rto}</p>
-            <p class="mb-1"><strong>RTO Code:</strong> ${data.rto_code}</p>
-            <p><strong>Address:</strong> ${data.address}</p>
-            <p><strong>Phone No:</strong> ${data.phone}</p>
-          </div>
-        `;
-      } else {
-        document.getElementById("rtoResult").innerHTML = `<p class="text-danger">No RTO found for this input.</p>`;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Search for any Indian RTO by code, district, or state. Get accurate transport office information."
+    />
+    <meta
+      property="og:title"
+      content="RTO Bharat - India's RTO Search Portal"
+    />
+    <meta property="og:image" content="/thumbnail.png" />
+    <title>RTO Bharat</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        background: url("/bg.jpg") no-repeat center center fixed;
+        background-size: cover;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
       }
-    })
-    .catch(() => {
-      document.getElementById("loading").classList.add("d-none");
-      document.getElementById("rtoResult").innerHTML = `<p class="text-danger">Error fetching data.</p>`;
-    });
-}
 
+      .card {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 40px;
+        border-radius: 16px;
+        max-width: 700px;
+        width: 90%;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        text-align: center;
+      }
 
-    // function quickSearch(code) {
-    //   document.getElementById("rtoInput").value = code;
-    //   searchRTO();
-    // }
-  </script>
-</body>
+      .card h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #00ffcc;
+      }
+
+      .card p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 10px 0;
+        color: #ddd;
+      }
+
+      .card a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 24px;
+        background-color: #00ffcc;
+        color: #000;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+
+      .card a:hover {
+        background-color: #00ccaa;
+      }
+
+      .search-section strong p {
+        margin-bottom: 15px;
+      }
+
+      .card-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .input-group {
+        display: flex;
+      }
+
+      .form-control {
+        flex-grow: 1;
+        border-radius: 8px 0 0 8px;
+        padding: 10px;
+        color: #333;
+        border: none;
+      }
+
+      .btn-primary {
+        background-color: #00ffcc;
+        color: #000;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 0 8px 8px 0;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background-color: #00ccaa;
+      }
+
+      .result-box {
+        margin-top: 20px;
+        color: #ddd;
+        text-align: left;
+        height: auto;
+        overflow: hidden;
+        transition: height 0.3s ease-in-out;
+      }
+
+      .result-box.has-results {
+        height: 200px;
+        overflow-y: auto;
+      }
+
+      .result-box .card {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: none;
+        text-align: left;
+      }
+
+      .result-box p {
+        margin-bottom: 8px;
+      }
+
+      .text-danger {
+        color: #ff6666;
+      }
+
+      .text-muted {
+        color: #aaa;
+      }
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+
+      ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(240, 231, 231, 0.3);
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(228, 223, 223, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-wrapper-top">
+      <div class="card">
+        <h1>Welcome to RTO Bharat</h1>
+        <p>
+          RTO Bharat is your one-stop destination to find accurate and
+          up-to-date information about Regional Transport Offices (RTOs) across
+          India.
+        </p>
+        <p>
+          Simply enter one or two RTO codes (e.g., <strong>HP-01</strong>,
+          <strong>DL-04 MH-12</strong>), State (e.g.,
+          <strong>Maharashtra</strong>), or District (e.g.,
+          <strong>Pune</strong>) to get instant results.
+        </p>
+        <p>
+          Keep track of your vehicle documents, know where your vehicle is
+          registered, and stay informed — all in one place.
+        </p>
+        <a href="api/rto/states/himachal%20Pradesh">Try a Sample Search → </a>
+      </div>
+    </div>
+    <div class="main-wrapper-bottom">
+      <div class="card">
+        <div class="container text-center search-section">
+          <strong
+            ><p>
+              Search for any Indian RTO by code(s), district, or state. Get
+              verified transport office information in seconds.
+            </p></strong
+          >
+          <div class="card-layout">
+            <div class="input-group mb-1">
+              <input
+                type="text"
+                class="form-control"
+                id="searchInput"
+                placeholder="Enter RTO Code(s) (e.g., MH-12, UP-16), State, or District"
+                oninput="handleInputChange()"
+              />
+              <button class="btn btn-primary" onclick="searchRTO()">
+                Search
+              </button>
+            </div>
+            <div id="loading" class="text-muted d-none">Loading...</div>
+            <div id="rtoResult" class="result-box mt-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const searchInput = document.getElementById("searchInput");
+      const rtoResultDiv = document.getElementById("rtoResult");
+
+      function handleInputChange() {
+        if (searchInput.value.trim() === "") {
+          rtoResultDiv.innerHTML = "";
+          rtoResultDiv.classList.remove("has-results");
+        }
+      }
+
+      async function searchRTO() {
+        const query = searchInput.value.trim();
+
+        if (!query) {
+          rtoResultDiv.innerHTML = "";
+          rtoResultDiv.classList.remove("has-results");
+          return;
+        }
+
+        document.getElementById("loading").classList.remove("d-none");
+        rtoResultDiv.innerHTML = "";
+        rtoResultDiv.classList.remove("has-results");
+
+        const queries = query
+          .split(",")
+          .map((q) => q.trim())
+          .filter((q) => q !== "");
+        const fetchPromises = [];
+
+        for (const q of queries) {
+          const normalizedCodeMatch = q
+            .toUpperCase()
+            .replace(/\s+/g, "")
+            .match(/^([A-Z]{2})(\d{2})$/);
+          if (normalizedCodeMatch) {
+            const normalizedCode = `${normalizedCodeMatch[1]}-${normalizedCodeMatch[2]}`;
+            fetchPromises.push(
+              fetch(`/api/rto/rtocodes/${normalizedCode}`)
+                .then((res) => res.json())
+                .catch(() => null)
+            );
+          } else if (q) {
+            fetchPromises.push(
+              fetch(`/api/rto/search?q=${encodeURIComponent(q)}`)
+                .then((res) => res.json())
+                .catch(() => [])
+            );
+          }
+        }
+
+        const allResults = await Promise.all(fetchPromises);
+        document.getElementById("loading").classList.add("d-none");
+
+        let combinedResults = [];
+        allResults.forEach((result) => {
+          if (Array.isArray(result)) {
+            combinedResults = combinedResults.concat(result);
+          } else if (result && result.rto_code) {
+            combinedResults.push(result);
+          }
+        });
+
+        if (combinedResults.length > 0) {
+          let resultsHTML = "";
+          const uniqueResults = [];
+          const seenCodes = new Set();
+
+          combinedResults.forEach((rto) => {
+            const code = rto.rto_code;
+            if (code && !seenCodes.has(code)) {
+              seenCodes.add(code);
+              uniqueResults.push(rto);
+            } else if (!code) {
+              uniqueResults.push(rto);
+            }
+          });
+
+          uniqueResults.forEach((rto) => {
+            resultsHTML += `
+            <div class="card p-3 mb-2">
+              ${
+                rto.rto
+                  ? `<p class="mb-1"><strong>RTO Name:</strong> ${rto.rto}</p>`
+                  : ""
+              }
+              ${
+                rto.rto_code
+                  ? `<p class="mb-1"><strong>RTO Code:</strong> ${rto.rto_code}</p>`
+                  : ""
+              }
+              ${
+                rto.state
+                  ? `<p class="mb-1"><strong>State:</strong> ${rto.state}</p>`
+                  : ""
+              }
+              ${
+                rto.district
+                  ? `<p class="mb-1"><strong>District:</strong> ${rto.district}</p>`
+                  : ""
+              }
+              ${
+                rto.address
+                  ? `<p><strong>Address:</strong> ${rto.address}</p>`
+                  : ""
+              }
+              ${
+                rto.phone
+                  ? `<p><strong>Phone No:</strong> ${rto.phone}</p>`
+                  : ""
+              }
+            </div>
+          `;
+          });
+          rtoResultDiv.innerHTML = resultsHTML;
+          rtoResultDiv.classList.add("has-results");
+        } else {
+          rtoResultDiv.innerHTML = `<p class="text-danger">No RTO found for "${query}".</p>`;
+          rtoResultDiv.classList.remove("has-results");
+        }
+      }
+
+      // function quickSearch(code) {
+      //   searchInput.value = code;
+      //   searchRTO();
+      // }
+    </script>
+  </body>
 </html>

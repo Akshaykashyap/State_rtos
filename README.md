@@ -14,7 +14,7 @@ This API provides developers with access to Regional Transport Office (RTO) data
 The base URL for all API endpoints depends on the deployment environment.
 
 * **Development:** `http://localhost:3000`
-* **Production:** `https://api.example.com/rto/`
+* **Production:** `https://rtobharat.vercel.app/`
 
     * All endpoint paths in this document are relative to the appropriate base URL.
 
