@@ -1286,85 +1286,85 @@
         "district": "Shimla",
         "rtos": [
           {
-            "rto": "Shimla RTO",
+            "rto": "RLA Shimla HP-03/HP-07 (Urban)",
             "rto_code": "HP-07",
             "address": "Regional Transport Office, Shimla, Himachal Pradesh - 171001",
             "phone": "0177-2656789"
           },
           {
-            "rto": "Shimla Urban RTO",
+            "rto": "RLA Shimla HP-03/HP-07 (Urban)",
             "rto_code": "HP-01",
             "address": "Regional Transport Office (Urban), Shimla, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Shimla Urban RTO-II",
+            "rto": "RLA Shimla HP-03/HP-07 (Urban)",
             "rto_code": "HP-02",
             "address": "Regional Transport Office (Urban)-II, Shimla, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Shimla Urban RTO-III",
+            "rto": "RLA Shimla HP-03/HP-07 (Urban)",
             "rto_code": "HP-03",
             "address": "Regional Transport Office (Urban)-III, Shimla, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Rampur RTO",
+            "rto": "RLA Rampur Bushar",
             "rto_code": "HP-06",
             "address": "Regional Transport Office, Rampur, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Chaupal RTO",
+            "rto": "RLA Chopal",
             "rto_code": "HP-08",
             "address": "Regional Transport Office, Chaupal, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Theog RTO",
+            "rto": "RLA Theog",
             "rto_code": "HP-09",
             "address": "Regional Transport Office, Theog, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Rohru RTO",
+            "rto": "RLA Rohru",
             "rto_code": "HP-10",
             "address": "Regional Transport Office, Rohru, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Shimla RTO-IV",
+            "rto": "RTO Shimla",
             "rto_code": "HP-50",
             "address": "Regional Transport Office-IV, Shimla, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Shimla Rural RTO-I",
+            "rto": "RLA Shimla(Rural)",
             "rto_code": "HP-51",
             "address": "Regional Transport Office (Rural)-I, Shimla, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Shimla Rural RTO-II",
+            "rto": "RLA Shimla(Rural)",
             "rto_code": "HP-52",
             "address": "Regional Transport Office (Rural)-II, Shimla, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Dodra Kawar RTO",
+            "rto": "RLA Dodra Kawar",
             "rto_code": "HP-77",
             "address": "Regional Transport Office, Dodra Kawar, Distt. Shimla, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Kumarsain RTO",
+            "rto": "RLA Kumarsain",
             "rto_code": "HP-95",
             "address": "Regional Transport Office, Kumarsain, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Kotkhai RTO",
+            "rto": "RLA Kotkhai",
             "rto_code": "HP-99",
             "address": "Regional Transport Office, Kotkhai, Himachal Pradesh",
             "phone": null
@@ -1375,55 +1375,55 @@
         "district": "Solan",
         "rtos": [
           {
-            "rto": "Solan RTO",
+            "rto": "RLA Solan",
             "rto_code": "HP-14",
             "address": "Regional Transport Office, Solan, Himachal Pradesh - 173212",
             "phone": "01792-225678"
           },
           {
-            "rto": "Arki RTO",
+            "rto": "RLA Arki",
             "rto_code": "HP-11",
             "address": "Regional Transport Office, Arki, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Nalagarh RTO",
+            "rto": "RLA Nalagarh",
             "rto_code": "HP-12",
             "address": "Regional Transport Office, Nalagarh, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Kandaghat RTO",
+            "rto": "RLA Kandaghat",
             "rto_code": "HP-13",
             "address": "Regional Transport Office, Kandaghat, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Parwanoo RTO",
+            "rto": "RLA Parwanoo",
             "rto_code": "HP-15",
             "address": "Regional Transport Office, Parwanoo, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Solan RTO-II",
+            "rto": "RTO Solan",
             "rto_code": "HP-59",
             "address": "Regional Transport Office-II, Solan, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Solan RTO-III",
+            "rto": "RTO Solan",
             "rto_code": "HP-64",
             "address": "Regional Transport Office-III, Solan, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Baddi RTO (Nalagarh)",
+            "rto": "RTO Baddi(Nalagarh)",
             "rto_code": "HP-93",
             "address": "Regional Transport Office, Baddi at Nalagarh, Solan, HP-174101",
             "phone": "01795-222684"
           },
           {
-            "rto": "Kasauli RTO",
+            "rto": "RLA Kasauli",
             "rto_code": "HP-98",
             "address": "Regional Transport Office, Kasauli, Himachal Pradesh",
             "phone": null
@@ -1434,73 +1434,73 @@
         "district": "Mandi",
         "rtos": [
           {
-            "rto": "Mandi RTO",
+            "rto": "RLA Mandi",
             "rto_code": "HP-33",
             "address": "Regional Transport Office, Mandi, Himachal Pradesh - 175001",
             "phone": "01905-245678"
           },
           {
-            "rto": "Mandi RTO-II",
+            "rto": "RTO Mandi",
             "rto_code": "HP-05",
             "address": "Regional Transport Office-II, Mandi, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Sarkaghat RTO",
+            "rto": "RLA Sarkaghat",
             "rto_code": "HP-28",
             "address": "Regional Transport Office, Sarkaghat, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Jogindernagar RTO",
+            "rto": "RLA Jogendranagar",
             "rto_code": "HP-29",
             "address": "Regional Transport Office, Jogindernagar, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Karsog RTO",
+            "rto": "RLA Karsog",
             "rto_code": "HP-30",
             "address": "Regional Transport Office, Karsog, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Sundernagar RTO",
+            "rto": "RLA Sundarnagar",
             "rto_code": "HP-31",
             "address": "Regional Transport Office, Sundernagar, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Gohar RTO",
+            "rto": "RLA Gohar",
             "rto_code": "HP-32",
             "address": "Regional Transport Office, Gohar, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Mandi RTO-III",
+            "rto": "RTO Mandi",
             "rto_code": "HP-65",
             "address": "Regional Transport Office-III, Mandi, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Paddhar RTO",
+            "rto": "RLA Paddhar",
             "rto_code": "HP-76",
             "address": "Regional Transport Office, Paddhar, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Mandi Rural RTO",
+            "rto": "RLA Balh",
             "rto_code": "HP-82",
             "address": "Regional Transport Office (Rural), Mandi, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Janjehli RTO",
+            "rto": "RLA Thunag",
             "rto_code": "HP-87",
             "address": "Regional Transport Office, Janjehli, Mandi, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Bali Chowki RTO",
+            "rto": "RLA Balichowki",
             "rto_code": "HP-87AA",
             "address": "Regional Transport Office, Bali Chowki, Mandi, Himachal Pradesh",
             "phone": null
@@ -1511,115 +1511,115 @@
         "district": "Kangra",
         "rtos": [
           {
-            "rto": "Kangra RTO",
+            "rto": "RLA Kangra",
             "rto_code": "HP-40",
             "address": "Regional Transport Office, Kangra, Himachal Pradesh - 176001",
             "phone": "01892-235678"
           },
           {
-            "rto": "Dharamsala RTO",
+            "rto": "RLA Dharamshala",
             "rto_code": "HP-04",
             "address": "Regional Transport Office, Dharamsala, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Dehra RTO",
+            "rto": "RLA Dehra",
             "rto_code": "HP-36",
             "address": "Regional Transport Office, Dehra, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Palampur RTO",
+            "rto": "RLA Palampur",
             "rto_code": "HP-37",
             "address": "Regional Transport Office, Palampur, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Nurpur RTO",
+            "rto": "RLA Nurpur",
             "rto_code": "HP-38",
             "address": "Regional Transport Office, Nurpur, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Dharamsala RTO-II",
+            "rto": "RLA Dharamshala",
             "rto_code": "HP-39",
             "address": "Regional Transport Office-II, Dharamsala, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Baijnath RTO",
+            "rto": "RLA Baijnath",
             "rto_code": "HP-53",
             "address": "Regional Transport Office, Baijnath, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Jawali RTO",
+            "rto": "RLA Jawali",
             "rto_code": "HP-54",
             "address": "Regional Transport Office, Jawali, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Jaisinghpur RTO",
+            "rto": "RLA Jaisingpur",
             "rto_code": "HP-56",
             "address": "Regional Transport Office, Jaisinghpur, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Dharamsala RTO-III",
+            "rto": "RTO Dharamshala",
             "rto_code": "HP-68",
             "address": "Regional Transport Office-III, Dharamsala, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Baijnath RTO-II",
+            "rto": "RLA Baijnath",
             "rto_code": "HP-53",
             "address": "Sub Divisional Officer (C), Baijnath, Distt. Kangra- 176125",
             "phone": "01894-263656"
           },
           {
-            "rto": "Jawali RTO-II",
+            "rto": "RLA Jawali",
             "rto_code": "HP-54",
             "address": "Sub Divisional Officer (C),Jawali, Distt. Kangra- 176023",
             "phone": "01893-264310"
           },
           {
-            "rto": "Jaisinghpur RTO-II",
+            "rto": "RLA Jaisingpur",
             "rto_code": "HP-56",
             "address": "Sub Divisional Officer (C) Jaisinghpur, Distt. Kangra- 176095",
             "phone": "01894-228111"
           },
           {
-            "rto": "Jawalaji RTO",
+            "rto": "RLA Jawalaji",
             "rto_code": "HP-83",
             "address": "Regional Transport Office, Jawalaji, Kangra, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Fatehpur RTO",
+            "rto": "RLA Fathepur",
             "rto_code": "HP-88",
             "address": "Regional Transport Office, Fatehpur, Kangra, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Shahpur RTO",
+            "rto": "RLA Shahpur",
             "rto_code": "HP-90",
             "address": "Regional Transport Office, Shahpur, Kangra, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Nagrota Bagwan RTO",
+            "rto": "RLA Nagrota Bagwan",
             "rto_code": "HP-94",
             "address": "Regional Transport Office, Nagrota Bagwan, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Dheera RTO",
+            "rto": "RLA Dheera",
             "rto_code": "HP-96",
             "address": "Regional Transport Office, Dheera, Kangra, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Indora RTO",
+            "rto": "RLA Indora",
             "rto_code": "HP-97",
             "address": "Regional Transport Office, Indora, Kangra, Himachal Pradesh",
             "phone": null
@@ -1630,37 +1630,37 @@
         "district": "Kullu",
         "rtos": [
           {
-            "rto": "Kullu RTO",
+            "rto": "RLA Kulu",
             "rto_code": "HP-34",
             "address": "Regional Transport Office, Kullu, Himachal Pradesh - 175101",
             "phone": "01902-225678"
           },
           {
-            "rto": "Anni RTO",
+            "rto": "RLA Ani",
             "rto_code": "HP-35",
             "address": "Regional Transport Office, Anni, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Banjar RTO",
+            "rto": "RLA Banjar",
             "rto_code": "HP-49",
             "address": "Regional Transport Office, Banjar, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Manali RTO",
+            "rto": "RLA Manali",
             "rto_code": "HP-58",
             "address": "Regional Transport Office, Manali, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Kullu RTO-II",
+            "rto": "RTO Kullu",
             "rto_code": "HP-66",
             "address": "Regional Transport Office-II, Kullu, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Kullu RTO-III",
+            "rto": "RTO Kullu",
             "rto_code": "HP-67",
             "address": "Regional Transport Office-III, Kullu, Himachal Pradesh",
             "phone": null
@@ -1671,357 +1671,357 @@
         "district": "Chamba",
         "rtos": [
           {
-            "rto": "Chamba RTO",
+            "rto": "RLA Chamba",
             "rto_code": "HP-48",
             "address": "Regional Transport Office, Chamba, Himachal Pradesh - 176310",
             "phone": "01899-245678"
           },
           {
-            "rto": "Churah RTO",
+            "rto": "RLA Churah",
             "rto_code": "HP-44",
             "address": "Regional Transport Office, Churah, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Pangi RTO",
+            "rto": "RLA Pangi",
             "rto_code": "HP-45",
             "address": "Regional Transport Office, Pangi, Himachal Pradesh",
             "phone": null
           },
           {
-            "rto": "Bharmour RTO",
+            "rto": "RLA Bharmour",
             "rto_code": "HP-46",
             "address": "Regional Transport Office, Bharmour, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Dalhousie RTO",
-            "rto_code": "HP-47",
-            "address": "Regional Transport Office, Dalhousie, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Chamba RTO-II",
-            "rto_code": "HP-79",
-            "address": "Regional Transport Office-II, Chamba, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Salooni RTO",
-            "rto_code": "HP-89",
-            "address": "Regional Transport Office, Salooni, Chamba, Himachal Pradesh",
-            "phone": null
-          }
-        ]
-      },
-      {
-        "district": "Una",
-        "rtos": [
-          {
-            "rto": "Una RTO",
-            "rto_code": "HP-72",
-            "address": "Regional Transport Office, Una, Himachal Pradesh - 174303",
-            "phone": "01975-225678"
-          },
-          {
-            "rto": "Bangana RTO",
-            "rto_code": "HP-20",
-            "address": "Regional Transport Office, Bangana, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Amb RTO",
-            "rto_code": "HP-73",
-            "address": "Regional Transport Office, Amb, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Bharwain RTO",
-            "rto_code": "HP-74",
-            "address": "Regional Transport Office, Bharwain, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Gagret RTO",
-            "rto_code": "HP-75",
-            "address": "Regional Transport Office, Gagret, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Santokhgarh RTO",
-            "rto_code": "HP-84",
-            "address": "Regional Transport Office, Santokhgarh, Una, Himachal Pradesh",
-            "phone": null
-          }
-        ]
-      },
-      {
-        "district": "Bilaspur",
-        "rtos": [
-          {
-            "rto": "Bilaspur RTO",
-            "rto_code": "HP-69",
-            "address": "Regional Transport Office, Bilaspur, Himachal Pradesh - 174001",
-            "phone": "01978-245678"
-          },
-          {
-            "rto": "Ghumarwin RTO",
-            "rto_code": "HP-24",
-            "address": "Regional Transport Office, Ghumarwin, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Naina Devi Ji RTO",
-            "rto_code": "HP-25",
-            "address": "Regional Transport Office, Naina Devi Ji, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Bilaspur RTO-II",
-            "rto_code": "HP-70",
-            "address": "Regional Transport Office-II, Bilaspur, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Swarghat RTO",
-            "rto_code": "HP-86",
-            "address": "Regional Transport Office, Swarghat, Bilaspur, Himachal Pradesh",
-            "phone": null
-          }
-        ]
-      },
-      {
-        "district": "Hamirpur",
-        "rtos": [
-          {
-            "rto": "Hamirpur RTO",
-            "rto_code": "HP-21",
-            "address": "Regional Transport Office, Hamirpur, Himachal Pradesh - 177001",
-            "phone": "01972-235678"
-          },
-          {
-            "rto": "Barsar RTO",
-            "rto_code": "HP-22",
-            "address": "Regional Transport Office, Barsar, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Nadaun RTO",
-            "rto_code": "HP-23",
-            "address": "Regional Transport Office, Nadaun, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Sujanpur Tihra RTO",
-            "rto_code": "HP-27",
-            "address": "Regional Transport Office, Sujanpur Tihra, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Bhoranj RTO",
-            "rto_code": "HP-55",
-            "address": "Regional Transport Office, Bhoranj, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Hamirpur RTO-II",
-            "rto_code": "HP-71",
-            "address": "Regional Transport Office-II, Hamirpur, Himachal Pradesh",
-            "phone": null
-          }
-        ]
-      },
-      {
-        "district": "Lahaul and Spiti",
-        "rtos": [
-          {
-            "rto": "Lahaul and Spiti RTO",
-            "rto_code": "HP-41",
-            "address": "Regional Transport Office, Lahaul and Spiti, Himachal Pradesh - 175132",
-            "phone": "01906-225678"
-          },
-          {
-            "rto": "Keylong RTO",
-            "rto_code": "HP-42",
-            "address": "Regional Transport Office, Keylong, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Kaza RTO",
-            "rto_code": "HP-43",
-            "address": "Regional Transport Office, Kaza, Himachal Pradesh",
-            "phone": null
-          }
-        ]
-      },
-      {
-        "district": "Kinnaur",
-        "rtos": [
-          {
-            "rto": "Kinnaur RTO",
-            "rto_code": "HP-26",
-            "address": "Regional Transport Office, Kinnaur, Himachal Pradesh - 172104",
-            "phone": "01786-222678"
-          },
-          {
-            "rto": "Reckong Peo RTO",
-            "rto_code": "HP-78",
-            "address": "Regional Transport Office, Reckong Peo, Kinnaur, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Pooh RTO",
-            "rto_code": "HP-85",
-            "address": "Regional Transport Office, Pooh, Kinnaur, Himachal Pradesh",
-            "phone": null
-          }
-        ]
-      },
-      {
-        "district": "Sirmaur",
-        "rtos": [
-          {
-            "rto": "Sirmaur RTO",
-            "rto_code": "HP-17",
-            "address": "Regional Transport Office, Sirmaur, Himachal Pradesh - 173001",
-            "phone": null
-          },
-          {
-            "rto": "Nahan RTO",
-            "rto_code": "HP-18",
-            "address": "Regional Transport Office, Nahan, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Paonta Sahib RTO",
-            "rto_code": "HP-19",
-            "address": "Regional Transport Office, Paonta Sahib, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Rajgarh RTO",
-            "rto_code": "HP-57",
-            "address": "Regional Transport Office, Rajgarh, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Sangrah RTO",
-            "rto_code": "HP-60",
-            "address": "Regional Transport Office, Sangrah, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Shillai RTO",
-            "rto_code": "HP-61",
-            "address": "Regional Transport Office, Shillai, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Renukaji RTO",
-            "rto_code": "HP-62",
-            "address": "Regional Transport Office, Renukaji, Himachal Pradesh",
-            "phone": null
-          },
-          {
-            "rto": "Theog RTO-II (Kotkhai)",
-            "rto_code": "HP-09-02",
-            "address": "Office of the Sub Divisional Officer (Civil), Kotkhai, Distt. Shimla-171202",
-            "phone": "01783-234005"
-          },
-          {
-            "rto": "Arki RTO-II (Darlaghat)",
-            "rto_code": "HP-11-02",
-            "address": "Office of the Sub Divisional Officer (Civil), Darlaghat, Distt. Solan-171115",
-            "phone": "01978-284222"
-          },
-          {
-            "rto": "Ghumarwin RTO-II (Bharari)",
-            "rto_code": "HP-24-02",
-            "address": "Office of the Tehsildar, Bharari, Distt. Bilaspur-174024",
-            "phone": "01978-287855"
-          },
-          {
-            "rto": "Nadaun RTO-II (Jaswan)",
-            "rto_code": "HP-23-02",
-            "address": "Office of the Sub Divisional Officer (Civil), Jaswan, Distt. Kangra-177101",
-            "phone": "01970-246001"
-          },
-          {
-            "rto": "Jogindernagar RTO-II (Lad Bharol)",
-            "rto_code": "HP-29-02",
-            "address": "Office of the Sub Divisional Officer (Civil), Lad Bharol, Distt. Mandi-175023",
-            "phone": "01908-267222"
-          },
-          {
-            "rto": "Karsog RTO-II (Nalagarh)",
-            "rto_code": "HP-30-02",
-            "address": "Office of the Sub Divisional Officer (Civil), Pangna, Distt. Mandi-175021",
-            "phone": "01907-250022"
-          },
-          {
-            "rto": "Anni RTO-II (Nirmand)",
-            "rto_code": "HP-35-02",
-            "address": "Office of the Sub Divisional Officer (Civil), Nirmand, Distt. Kullu-172002",
-            "phone": "01907-233001"
-          },
-          {
-            "rto": "Dehra RTO-II (Haripur)",
-            "rto_code": "HP-36-02",
-            "address": "Office of the Sub Divisional Officer (Civil), Haripur, Distt. Kangra-177102",
-            "phone": "01970-244001"
-          },
-          {
-            "rto": "Palampur RTO-II (Jaisinghpur)",
-            "rto_code": "HP-37-02",
-            "address": "Office of the Sub Divisional Officer (Civil), Jaisinghpur, Distt. Kangra-176095",
-            "phone": "01894-228111"
-          },
-          {
-            "rto": "Nurpur RTO-II (Indora)",
-            "rto_code": "HP-38-02",
-            "address": "Office of the Sub Divisional Officer (Civil), Indora, Distt. Kangra-176401",
-            "phone": "01893-257001"
-          },
-          {
-            "rto": "Baijnath RTO-III (Bhadwar)",
-            "rto_code": "HP-53-03",
-            "address": "Office of the Sub Divisional Officer (Civil), Bhadwar, Distt. Kangra-176082",
-            "phone": "01893-248001"
-          },
-          {
-            "rto": "Hamirpur RTO-III (Sujanpur)",
-            "rto_code": "HP-21-03",
-            "address": "Office of the Sub Divisional Officer (Civil), Sujanpur, Distt. Hamirpur-176110",
-            "phone": "01972-272222"
-          },
-          {
-            "rto": "Una RTO-II (Haroli)",
-            "rto_code": "HP-72-02",
-            "address": "Office of the Sub Divisional Officer (Civil), Haroli, Distt. Una-174301",
-            "phone": "01975-244001"
-          },
-          {
-            "rto": "Paonta Sahib RTO-II (Shillai)",
-            "rto_code": "HP-19-02",
-            "address": "Office of the Sub Divisional Officer (Civil), Shillai, Distt. Sirmaur-173107",
-            "phone": "01707-277001"
-          },
-          {
-            "rto": "Reckong Peo RTO-II (Kalpa)",
-            "rto_code": "HP-78-02",
-            "address": "Office of the Sub Divisional Officer (Civil), Kalpa, Distt. Kinnaur-172108",
-            "phone": "01786-226001"
-          },
-          {
-            "rto": "Keylong RTO-II (Udaipur)",
-            "rto_code": "HP-42-02",
-            "address": "Office of the Sub Divisional Officer (Civil), Udaipur, Distt. Lahaul & Spiti-175138",
-            "phone": "01909-242001"
-          }
-        ]
-      }
-    ]
-  },
+          "phone": null
+        },
+        {
+          "rto": "RLA Dalhousie",
+          "rto_code": "HP-47",
+          "address": "Regional Transport Office, Dalhousie, Himachal Pradesh",
+          "phone": null
+        },
+        {
+          "rto": "RLA Sangrah",
+          "rto_code": "HP-79",
+          "address": "Regional Transport Office-II, Chamba, Himachal Pradesh",
+          "phone": null
+        },
+        {
+          "rto": "RLA Jhandutta",
+          "rto_code": "HP-89",
+          "address": "Regional Transport Office, Salooni, Chamba, Himachal Pradesh",
+          "phone": null
+        }
+      ]
+    },
+    {
+      "district": "Una",
+      "rtos": [
+        {
+          "rto": "RTO Una",
+          "rto_code": "HP-72",
+          "address": "Regional Transport Office, Una, Himachal Pradesh - 174303",
+          "phone": "01975-225678"
+        },
+        {
+          "rto": "RLA Una",
+          "rto_code": "HP-20",
+          "address": "Regional Transport Office, Bangana, Himachal Pradesh",
+          "phone": null
+        },
+        {
+          "rto": "RTO Chamba",
+          "rto_code": "HP-73",
+          "address": "Regional Transport Office, Amb, Himachal Pradesh",
+          "phone": null
+        },
+        {
+          "rto": "RLA Bhoranj",
+          "rto_code": "HP-74",
+          "address": "Regional Transport Office, Bharwain, Himachal Pradesh",
+          "phone": null
+        },
+        {
+          "rto": "RLA Jubbal",
+          "rto_code": "HP-75",
+          "address": "Regional Transport Office, Gagret, Himachal Pradesh",
+          "phone": null
+        },
+        {
+          "rto": "RLA Sujanpur",
+          "rto_code": "HP-84",
+          "address": "Regional Transport Office, Santokhgarh, Una, Himachal Pradesh",
+          "phone": null
+        }
+      ]
+    },
+    {
+      "district": "Bilaspur",
+      "rtos": [
+        {
+          "rto": "RTO Bilaspur",
+          "rto_code": "HP-69",
+          "address": "Regional Transport Office, Bilaspur, Himachal Pradesh - 174001",
+          "phone": "01978-245678"
+        },
+        {
+          "rto": "RLA Bilaspur",
+          "rto_code": "HP-24",
+          "address": "Regional Transport Office, Ghumarwin, Himachal Pradesh",
+          "phone": null
+        },
+        {
+          "rto": "RLA Kalpa",
+          "rto_code": "HP-25",
+          "address": "Regional Transport Office, Naina Devi Ji, Himachal Pradesh",
+          "phone": null
+        },
+        {
+          "rto": "RTO Bilaspur",
+          "rto_code": "HP-70",
+          "address": "Regional Transport Office-II, Bilaspur, Himachal Pradesh",
+          "phone": null
+        },
+        {
+          "rto": "RLA Dharampur",
+          "rto_code": "HP-86",
+          "address": "Regional Transport Office, Swarghat, Bilaspur, Himachal Pradesh",
+          "phone": null
+        }
+      ]
+    },
+    {
+      "district": "Hamirpur",
+      "rtos": [
+        {
+          "rto": "RLA Barsar",
+          "rto_code": "HP-21",
+          "address": "Regional Transport Office, Hamirpur, Himachal Pradesh - 177001",
+          "phone": "01972-235678"
+        },
+        {
+          "rto": "RLA Hamirpur",
+          "rto_code": "HP-22",
+          "address": "Regional Transport Office, Barsar, Himachal Pradesh",
+          "phone": null
+        },
+        {
+          "rto": "RLA Ghumarvi",
+          "rto_code": "HP-23",
+          "address": "Regional Transport Office, Nadaun, Himachal Pradesh",
+          "phone": null
+        },
+        {
+          "rto": "RLA Pooh",
+          "rto_code": "HP-27",
+          "address": "Regional Transport Office, Sujanpur Tihra, Himachal Pradesh",
+          "phone": null
+        },
+        {
+          "rto": "RLA Nadaun",
+          "rto_code": "HP-55",
+          "address": "Regional Transport Office, Bhoranj, Himachal Pradesh",
+          "phone": null
+        },
+        {
+          "rto": "RTO Nahan",
+          "rto_code": "HP-71",
+          "address": "Regional Transport Office-II, Hamirpur, Himachal Pradesh",
+          "phone": null
+        }
+      ]
+    },
+    {
+      "district": "Lahaul and Spiti",
+      "rtos": [
+        {
+          "rto": "RLA Kaza",
+          "rto_code": "HP-41",
+          "address": "Regional Transport Office, Lahaul and Spiti, Himachal Pradesh - 175132",
+          "phone": "01906-225678"
+        },
+        {
+          "rto": "RLA Kelang",
+          "rto_code": "HP-42",
+          "address": "Regional Transport Office, Keylong, Himachal Pradesh",
+          "phone": null
+        },
+        {
+          "rto": "RLA Udaipur",
+          "rto_code": "HP-43",
+          "address": "Regional Transport Office, Kaza, Himachal Pradesh",
+          "phone": null
+        }
+      ]
+    },
+    {
+      "district": "Kinnaur",
+      "rtos": [
+        {
+          "rto": "RLA Nichar",
+          "rto_code": "HP-26",
+          "address": "Regional Transport Office, Kinnaur, Himachal Pradesh - 172104",
+          "phone": "01786-222678"
+        },
+        {
+          "rto": "RLA Bangana",
+          "rto_code": "HP-78",
+          "address": "Regional Transport Office, Reckong Peo, Kinnaur, Himachal Pradesh",
+          "phone": null
+        },
+        {
+          "rto": "RLA Shillai",
+          "rto_code": "HP-85",
+          "address": "Regional Transport Office, Pooh, Kinnaur, Himachal Pradesh",
+          "phone": null
+        }
+      ]
+    },
+    {
+      "district": "Sirmaur",
+      "rtos": [
+        {
+          "rto": "RLA Paonta Sahib",
+          "rto_code": "HP-17",
+          "address": "Regional Transport Office, Sirmaur, Himachal Pradesh - 173001",
+          "phone": null
+        },
+        {
+          "rto": "RLA Nahan",
+          "rto_code": "HP-18",
+          "address": "Regional Transport Office, Nahan, Himachal Pradesh",
+          "phone": null
+        },
+        {
+          "rto": "RLA Amb",
+          "rto_code": "HP-19",
+          "address": "Regional Transport Office, Paonta Sahib, Himachal Pradesh",
+          "phone": null
+        },
+        {
+          "rto": "RLA Chuwari",
+          "rto_code": "HP-57",
+          "address": "Regional Transport Office, Rajgarh, Himachal Pradesh",
+          "phone": null
+        },
+        {
+          "rto": "RLA Sangrah",
+          "rto_code": "HP-60",
+          "address": "Regional Transport Office, Sangrah, Himachal Pradesh",
+          "phone": null
+        },
+        {
+          "rto": "RLA Shillai",
+          "rto_code": "HP-61",
+          "address": "Regional Transport Office, Shillai, Himachal Pradesh",
+          "phone": null
+        },
+        {
+          "rto": "Sta Shimla",
+          "rto_code": "HP-62",
+          "address": "Regional Transport Office, Renukaji, Himachal Pradesh",
+          "phone": null
+        },
+        {
+          "rto": "RLA Theog",
+          "rto_code": "HP-09-02",
+          "address": "Office of the Sub Divisional Officer (Civil), Kotkhai, Distt. Shimla-171202",
+          "phone": "01783-234005"
+        },
+        {
+          "rto": "RLA Arki",
+          "rto_code": "HP-11-02",
+          "address": "Office of the Sub Divisional Officer (Civil), Darlaghat, Distt. Solan-171115",
+          "phone": "01978-284222"
+        },
+        {
+          "rto": "RLA Bilaspur",
+          "rto_code": "HP-24-02",
+          "address": "Office of the Tehsildar, Bharari, Distt. Bilaspur-174024",
+          "phone": "01978-287855"
+        },
+        {
+          "rto": "RLA Ghumarvi",
+          "rto_code": "HP-23-02",
+          "address": "Office of the Sub Divisional Officer (Civil), Jaswan, Distt. Kangra-177101",
+          "phone": "01970-246001"
+        },
+        {
+          "rto": "RLA Jogendranagar",
+          "rto_code": "HP-29-02",
+          "address": "Office of the Sub Divisional Officer (Civil), Lad Bharol, Distt. Mandi-175023",
+          "phone": "01908-267222"
+        },
+        {
+          "rto": "RLA Karsog",
+          "rto_code": "HP-30-02",
+          "address": "Office of the Sub Divisional Officer (Civil), Pangna, Distt. Mandi-175021",
+          "phone": "01907-250022"
+        },
+        {
+          "rto": "RLA Ani",
+          "rto_code": "HP-35-02",
+          "address": "Office of the Sub Divisional Officer (Civil), Nirmand, Distt. Kullu-172002",
+          "phone": "01907-233001"
+        },
+        {
+          "rto": "RLA Dehra",
+          "rto_code": "HP-36-02",
+          "address": "Office of the Sub Divisional Officer (Civil), Haripur, Distt. Kangra-177102",
+          "phone": "01970-244001"
+        },
+        {
+          "rto": "RLA Jaisingpur",
+          "rto_code": "HP-37-02",
+          "address": "Office of the Sub Divisional Officer (Civil), Jaisinghpur, Distt. Kangra-176095",
+          "phone": "01894-228111"
+        },
+        {
+          "rto": "RLA Nurpur",
+          "rto_code": "HP-38-02",
+          "address": "Office of the Sub Divisional Officer (Civil), Indora, Distt. Kangra-176401",
+          "phone": "01893-257001"
+        },
+        {
+          "rto": "RLA Baijnath",
+          "rto_code": "HP-53-03",
+          "address": "Office of the Sub Divisional Officer (Civil), Bhadwar, Distt. Kangra-176082",
+          "phone": "01893-248001"
+        },
+        {
+          "rto": "RLA Barsar",
+          "rto_code": "HP-21-03",
+          "address": "Office of the Sub Divisional Officer (Civil), Sujanpur, Distt. Hamirpur-176110",
+          "phone": "01972-272222"
+        },
+        {
+          "rto": "RTO Una",
+          "rto_code": "HP-72-02",
+          "address": "Office of the Sub Divisional Officer (Civil), Haroli, Distt. Una-174301",
+          "phone": "01975-244001"
+        },
+        {
+          "rto": "RLA Amb",
+          "rto_code": "HP-19-02",
+          "address": "Office of the Sub Divisional Officer (Civil), Shillai, Distt. Sirmaur-173107",
+          "phone": "01707-277001"
+        },
+        {
+          "rto": "RLA Bangana",
+          "rto_code": "HP-78-02",
+          "address": "Office of the Sub Divisional Officer (Civil), Kalpa, Distt. Kinnaur-172108",
+          "phone": "01786-226001"
+        },
+        {
+          "rto": "RLA Kelang",
+          "rto_code": "HP-42-02",
+          "address": "Office of the Sub Divisional Officer (Civil), Udaipur, Distt. Lahaul & Spiti-175138",
+          "phone": "01909-242001"
+        }
+      ]
+    }
+  ]
+},
   {
     "state": "Jharkhand",
     "districts": [
