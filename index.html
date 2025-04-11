@@ -192,12 +192,14 @@
     <div class="main-wrapper-bottom">
       <div class="card">
         <div class="container text-center search-section">
-          <strong
-            ><p>
+          <p>
               Search for any Indian RTO by code(s), or district. Get
               verified transport office information in seconds.
-            </p></strong
-          >
+          </p>
+          <p>
+            Alternatively, search by State (e.g., <strong>Himachal Pradesh, Maharashtra, Punjab, Haryana, Chandigarh</strong>), to see
+            the total number of RTOs in that state.
+          </p>
           <div class="card-layout">
             <div class="input-group mb-1">
               <input
@@ -221,6 +223,25 @@
     <script>
       const searchInput = document.getElementById("searchInput");
       const rtoResultDiv = document.getElementById("rtoResult");
+
+      // Store the full RTO data fetched once
+      let fullRtoData = null;
+
+      async function fetchFullRtoData() {
+        try {
+          const response = await fetch('/api/rto/states'); // Assuming this returns an array of state objects
+          if (response.ok) {
+            fullRtoData = await response.json();
+          } else {
+            console.error('Failed to fetch full RTO data.');
+          }
+        } catch (error) {
+          console.error('Error fetching full RTO data:', error);
+        }
+      }
+
+      // Fetch full RTO data when the page loads
+      fetchFullRtoData();
 
       function handleInputChange() {
         if (searchInput.value.trim() === "") {
@@ -250,9 +271,9 @@
 
         for (const q of queries) {
           const normalizedCodeMatch = q
-  .toUpperCase()
-  .replace(/[\s\-]+/g, "") // Remove both spaces and hyphens
-  .match(/^([A-Z]{2})(\d{2})$/);
+            .toUpperCase()
+            .replace(/[\s\-]+/g, "")
+            .match(/^([A-Z]{2})(\d{2})$/);
           if (normalizedCodeMatch) {
             const normalizedCode = `${normalizedCodeMatch[1]}-${normalizedCodeMatch[2]}`;
             fetchPromises.push(
@@ -272,66 +293,77 @@
         const allResults = await Promise.all(fetchPromises);
         document.getElementById("loading").classList.add("d-none");
 
-        let combinedResults = [];
+        let resultsHTML = "";
+        const uniqueResults = [];
+        const seenCodes = new Set();
+        let stateRtoCount = {};
+
+        // Check if the search query matches a state name
+        if (fullRtoData) {
+          const searchedState = fullRtoData.find(
+            (stateObj) => stateObj.toLowerCase() === query.toLowerCase()
+          );
+          if (searchedState) {
+            let totalRTOs = 0;
+            // You'll need to fetch the full details of the state to count RTOs
+            const stateDetailsResponse = await fetch(`/api/rto/states/${encodeURIComponent(searchedState)}`);
+            if (stateDetailsResponse.ok) {
+              const stateDetails = await stateDetailsResponse.json();
+              if (stateDetails && stateDetails.districts) {
+                totalRTOs = stateDetails.districts.reduce((sum, district) => sum + (district.rtos ? district.rtos.length : 0), 0);
+                resultsHTML = `
+                  <div class="card p-3 mb-2">
+                    <p class="mb-1"><strong>State:</strong> ${stateDetails.state}</p>
+                    <p class="mb-1"><strong>Total RTOs:</strong> ${totalRTOs}</p>
+                  </div>
+                `;
+              } else {
+                resultsHTML = `<p class="text-danger">Could not retrieve RTO count for "${query}".</p>`;
+              }
+            } else {
+              resultsHTML = `<p class="text-danger">State "${query}" not found.</p>`;
+            }
+            rtoResultDiv.innerHTML = resultsHTML;
+            rtoResultDiv.classList.add("has-results");
+            return; // Exit the function as we've handled the state search
+          }
+        }
+
+        // Process results for RTO codes or district/name search
         allResults.forEach((result) => {
           if (Array.isArray(result)) {
-            combinedResults = combinedResults.concat(result);
+            result.forEach((rto) => {
+              const code = rto.rto_code;
+              if (code && !seenCodes.has(code)) {
+                seenCodes.add(code);
+                uniqueResults.push(rto);
+              } else if (!code) {
+                uniqueResults.push(rto);
+              }
+            });
           } else if (result && result.rto_code) {
-            combinedResults.push(result);
+            const code = result.rto_code;
+            if (!seenCodes.has(code)) {
+              seenCodes.add(code);
+              uniqueResults.push(result);
+            }
           }
         });
 
-        if (combinedResults.length > 0) {
-          let resultsHTML = "";
-          const uniqueResults = [];
-          const seenCodes = new Set();
-
-          combinedResults.forEach((rto) => {
-            const code = rto.rto_code;
-            if (code && !seenCodes.has(code)) {
-              seenCodes.add(code);
-              uniqueResults.push(rto);
-            } else if (!code) {
-              uniqueResults.push(rto);
-            }
-          });
-
-          uniqueResults.forEach((rto) => {
-            resultsHTML += `
+        uniqueResults.forEach((rto) => {
+          resultsHTML += `
             <div class="card p-3 mb-2">
-              ${
-                rto.rto
-                  ? `<p class="mb-1"><strong>RTO Name:</strong> ${rto.rto}</p>`
-                  : ""
-              }
-              ${
-                rto.rto_code
-                  ? `<p class="mb-1"><strong>RTO Code:</strong> ${rto.rto_code}</p>`
-                  : ""
-              }
-              ${
-                rto.state
-                  ? `<p class="mb-1"><strong>State:</strong> ${rto.state}</p>`
-                  : ""
-              }
-              ${
-                rto.district
-                  ? `<p class="mb-1"><strong>District:</strong> ${rto.district}</p>`
-                  : ""
-              }
-              ${
-                rto.address
-                  ? `<p><strong>Address:</strong> ${rto.address}</p>`
-                  : ""
-              }
-              ${
-                rto.phone
-                  ? `<p><strong>Phone No:</strong> ${rto.phone}</p>`
-                  : ""
-              }
+              ${rto.rto ? `<p class="mb-1"><strong>RTO Name:</strong> ${rto.rto}</p>` : ""}
+              ${rto.rto_code ? `<p class="mb-1"><strong>RTO Code:</strong> ${rto.rto_code}</p>` : ""}
+              ${rto.state ? `<p class="mb-1"><strong>State:</strong> ${rto.state}</p>` : ""}
+              ${rto.district ? `<p class="mb-1"><strong>District:</strong> ${rto.district}</p>` : ""}
+              ${rto.address ? `<p><strong>Address:</strong> ${rto.address}</p>` : ""}
+              ${rto.phone ? `<p><strong>Phone No:</strong> ${rto.phone}</p>` : ""}
             </div>
           `;
-          });
+        });
+
+        if (resultsHTML) {
           rtoResultDiv.innerHTML = resultsHTML;
           rtoResultDiv.classList.add("has-results");
         } else {
@@ -339,11 +371,6 @@
           rtoResultDiv.classList.remove("has-results");
         }
       }
-
-      // function quickSearch(code) {
-      //   searchInput.value = code;
-      //   searchRTO();
-      // }
     </script>
   </body>
 </html>
