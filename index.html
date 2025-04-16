@@ -20,165 +20,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Inter", sans-serif;
-        background: url("/bg.jpg") no-repeat center center fixed;
-        background-size: cover;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-      }
-      @media (max-width: 768px) {
-        body {
-          max-width: 100%; 
-          display: block;
-        }
-      }
-
-      .card {
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 40px;
-        border-radius: 16px;
-        max-width: 700px;
-        width: 90%;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        text-align: center;
-      }
-      @media (max-width: 768px) {
-        .card {
-          width: 100%;
-        margin-bottom: 2.5rem;
-        }
-      }
-
-      .card h1 {
-        font-size: 32px;
-        margin-bottom: 20px;
-        color: #00ffcc;
-      }
-
-      .card p {
-        font-size: 16px;
-        line-height: 1.6;
-        margin: 10px 0;
-        color: #ddd;
-      }
-
-      .card a {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 12px 24px;
-        background-color: #00ffcc;
-        color: #000;
-        text-decoration: none;
-        border-radius: 8px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-      }
-
-      .card a:hover {
-        background-color: #00ccaa;
-      }
-
-      .search-section strong p {
-        margin-bottom: 15px;
-      }
-
-      .card-layout {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
-
-      .input-group {
-        display: flex;
-      }
-
-      .form-control {
-        flex-grow: 1;
-        border-radius: 8px 0 0 8px;
-        padding: 10px;
-        color: #333;
-        border: none;
-      }
-
-      .btn-primary {
-        background-color: #00ffcc;
-        color: #000;
-        border: none;
-        padding: 10px 15px;
-        border-radius: 0 8px 8px 0;
-        cursor: pointer;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-      }
-
-      .btn-primary:hover {
-        background-color: #00ccaa;
-      }
-
-      .result-box {
-        margin-top: 20px;
-        color: #ddd;
-        text-align: left;
-        height: auto;
-        overflow: hidden;
-        transition: height 0.3s ease-in-out;
-      }
-      .result-box strong {
-        display: inline-block;
-        width: 100px;
-      }
-
-      .result-box.has-results {
-        height: 200px;
-        overflow-y: auto;
-      }
-
-      .result-box .card {
-        background-color: rgba(255, 255, 255, 0.1);
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: none;
-        text-align: left;
-        box-shadow: inset 0 -.8em 2em rgb(0 204 170 / 30%), 0 0 0 0px white, 0.3em 0.3em .5em rgb(200 0 0 / 10%);
-      }
-      .result-box .text-danger {
-        display: block;
-      }
-      .result-box p {
-        margin-bottom: 8px;
-        display: grid;
-        grid-template-columns: 1fr 4fr;
-        text-wrap: balance;
-      }
-
-      .text-danger {
-        color: #ff6666;
-      }
-
-      .text-muted {
-        color: #aaa;
-      }
-      ::-webkit-scrollbar {
-        width: 12px;
-      }
-
-      ::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 6px rgba(240, 231, 231, 0.3);
-        border-radius: 10px;
-      }
-
-      ::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        -webkit-box-shadow: inset 0 0 6px rgba(228, 223, 223, 0.5);
-      }
-    </style>
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <div class="main-wrapper-top">
@@ -231,158 +73,75 @@
         </div>
       </div>
     </div>
+    
+    <form id="addRtoForm" class="addRtoForm">
+        <div class="form-group">
+            <label for="state">State:</label>
+            <select id="state" name="state" required onchange="loadDistricts(this.value)">
+              <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Goa">Goa</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="West Bengal">West Bengal</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Assam">Assam</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Ladakh">Ladakh</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Puducherry">Puducherry</option>
+            </select>
+        </div>
+        <div class="form-group district-select">
+          <label for="district-select">District:</label>
+          <select id="district-select" name="district" required>
+              <option value="">Select District</option>
+          </select>
+      </div>
+        <div class="form-group">
+            <label for="rto">RTO Name:</label>
+            <input type="text" id="rto" name="rto" required>
+        </div>
+        <div class="form-group">
+            <label for="rto_code">RTO Code:</label>
+            <input type="text" id="rto_code" name="rto_code" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone">
+        </div>
+        <button type="button" onclick="addNewRto()">Add RTO</button>
+    </form>
 
-    <script>
-      const searchInput = document.getElementById("searchInput");
-      const rtoResultDiv = document.getElementById("rtoResult");
-
-      // Store the full RTO data fetched once
-      let fullRtoData = null;
-
-      async function fetchFullRtoData() {
-        try {
-          const response = await fetch('/api/rto/states'); // Assuming this returns an array of state objects
-          if (response.ok) {
-            fullRtoData = await response.json();
-          } else {
-            console.error('Failed to fetch full RTO data.');
-          }
-        } catch (error) {
-          console.error('Error fetching full RTO data:', error);
-        }
-      }
-
-      // Fetch full RTO data when the page loads
-      fetchFullRtoData();
-
-      function handleInputChange() {
-        if (searchInput.value.trim() === "") {
-          rtoResultDiv.innerHTML = "";
-          rtoResultDiv.classList.remove("has-results");
-        }
-      }
-
-      async function searchRTO() {
-        const query = searchInput.value.trim();
-
-        if (!query) {
-          rtoResultDiv.innerHTML = "";
-          rtoResultDiv.classList.remove("has-results");
-          return;
-        }
-
-        document.getElementById("loading").classList.remove("d-none");
-        rtoResultDiv.innerHTML = "";
-        rtoResultDiv.classList.remove("has-results");
-
-        const queries = query
-          .split(",")
-          .map((q) => q.trim())
-          .filter((q) => q !== "");
-        const fetchPromises = [];
-
-        for (const q of queries) {
-          const normalizedCodeMatch = q
-            .toUpperCase()
-            .replace(/[\s\-]+/g, "")
-            .match(/^([A-Z]{2})(\d{2})$/);
-          if (normalizedCodeMatch) {
-            const normalizedCode = `${normalizedCodeMatch[1]}-${normalizedCodeMatch[2]}`;
-            fetchPromises.push(
-              fetch(`/api/rto/rtocodes/${normalizedCode}`)
-                .then((res) => res.json())
-                .catch(() => null)
-            );
-          } else if (q) {
-            fetchPromises.push(
-              fetch(`/api/rto/search?q=${encodeURIComponent(q)}`)
-                .then((res) => res.json())
-                .catch(() => [])
-            );
-          }
-        }
-
-        const allResults = await Promise.all(fetchPromises);
-        document.getElementById("loading").classList.add("d-none");
-
-        let resultsHTML = "";
-        const uniqueResults = [];
-        const seenCodes = new Set();
-        let stateRtoCount = {};
-
-        // Check if the search query matches a state name
-        if (fullRtoData) {
-          const searchedState = fullRtoData.find(
-            (stateObj) => stateObj.toLowerCase() === query.toLowerCase()
-          );
-          if (searchedState) {
-            let totalRTOs = 0;
-            // You'll need to fetch the full details of the state to count RTOs
-            const stateDetailsResponse = await fetch(`/api/rto/states/${encodeURIComponent(searchedState)}`);
-            if (stateDetailsResponse.ok) {
-              const stateDetails = await stateDetailsResponse.json();
-              if (stateDetails && stateDetails.districts) {
-                totalRTOs = stateDetails.districts.reduce((sum, district) => sum + (district.rtos ? district.rtos.length : 0), 0);
-                resultsHTML = `
-                  <div class="card p-3 mb-2">
-                    <p class="mb-1"><strong>State:</strong> ${stateDetails.state}</p>
-                    <p class="mb-1"><strong>Total RTOs:</strong> ${totalRTOs}</p>
-                  </div>
-                `;
-              } else {
-                resultsHTML = `<p class="text-danger">Could not retrieve RTO count for "${query}".</p>`;
-              }
-            } else {
-              resultsHTML = `<p class="text-danger">State "${query}" not found.</p>`;
-            }
-            rtoResultDiv.innerHTML = resultsHTML;
-            rtoResultDiv.classList.add("has-results");
-            return; // Exit the function as we've handled the state search
-          }
-        }
-
-        // Process results for RTO codes or district/name search
-        allResults.forEach((result) => {
-          if (Array.isArray(result)) {
-            result.forEach((rto) => {
-              const code = rto.rto_code;
-              if (code && !seenCodes.has(code)) {
-                seenCodes.add(code);
-                uniqueResults.push(rto);
-              } else if (!code) {
-                uniqueResults.push(rto);
-              }
-            });
-          } else if (result && result.rto_code) {
-            const code = result.rto_code;
-            if (!seenCodes.has(code)) {
-              seenCodes.add(code);
-              uniqueResults.push(result);
-            }
-          }
-        });
-
-        uniqueResults.forEach((rto) => {
-          resultsHTML += `
-            <div class="card p-3 mb-2">
-              ${rto.rto ? `<p class="mb-1"><strong>RTO Name:</strong> ${rto.rto}</p>` : ""}
-              ${rto.rto_code ? `<p class="mb-1"><strong>RTO Code:</strong> ${rto.rto_code}</p>` : ""}
-              ${rto.state ? `<p class="mb-1"><strong>State:</strong> ${rto.state}</p>` : ""}
-              ${rto.district ? `<p class="mb-1"><strong>District:</strong> ${rto.district}</p>` : ""}
-              ${rto.address ? `<p><strong>Address:</strong> ${rto.address}</p>` : ""}
-              ${rto.phone ? `<p><strong>Phone No:</strong> ${rto.phone}</p>` : ""}
-            </div>
-          `;
-        });
-
-        if (resultsHTML) {
-          rtoResultDiv.innerHTML = resultsHTML;
-          rtoResultDiv.classList.add("has-results");
-        } else {
-          rtoResultDiv.innerHTML = `<p class="text-danger">No RTO found for "${query}".</p>`;
-          rtoResultDiv.classList.remove("has-results");
-        }
-      }
-    </script>
+    <div id="message"></div>
+    <script src="/js/script.js"></script>
   </body>
 </html>

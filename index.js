@@ -1,12 +1,18 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+const bodyParser = require('body-parser');
 const app = express();
 const port = 3000;
 
 let rto_data = []; 
 
+// Middleware to parse JSON request bodies
+app.use(bodyParser.json());
+
 app.use(express.static(path.join(__dirname, 'public')));
+
+const dataFilePath = path.join(__dirname, 'rto_data.json');
 
 // Load RTO data from JSON file
 try {
@@ -171,6 +177,49 @@ app.get('/api/rto/search', (req, res) => {
 
   res.json(matches);
 });
+
+
+app.post('/api/add-rto', async (req, res) => {
+  const { state, district, rto, rto_code, address, phone } = req.body;
+  console.log('Received data:', { state, district, rto, rto_code, address, phone });
+
+  if (!state || !district || !rto || !rto_code) {
+      return res.status(400).json({ message: 'Please provide all required fields.' });
+  }
+
+  try {
+      const rawData = await fs.promises.readFile(dataFilePath, 'utf8');
+      const rtoData = JSON.parse(rawData);
+      console.log('Data read successfully:', rtoData);
+
+      const stateToUpdate = rtoData.find(s => s.state.toLowerCase() === state.toLowerCase());
+      console.log('State to update:', stateToUpdate);
+
+      if (stateToUpdate) {
+          const districtToUpdate = stateToUpdate.districts.find(d => d.district.toLowerCase() === district.toLowerCase());
+          console.log('District to update:', districtToUpdate);
+
+          if (districtToUpdate) {
+              const newRto = { rto, rto_code: rto_code.toUpperCase(), address: address || '', phone: phone || null };
+              districtToUpdate.rtos.push(newRto);
+              console.log('Updated rtoData:', rtoData);
+
+              await fs.promises.writeFile(dataFilePath, JSON.stringify(rtoData, null, 2), 'utf8');
+              console.log('File write successful.');
+              return res.status(200).json({ message: 'RTO added successfully!' });
+          } else {
+              return res.status(404).json({ message: `District "${district}" not found in ${state}.` });
+          }
+      } else {
+          return res.status(404).json({ message: `State "${state}" not found.` });
+      }
+
+  } catch (error) {
+      console.error('Error adding RTO:', error);
+      return res.status(500).json({ message: 'Failed to add RTO.' });
+  }
+});
+
 
 // Optional: Route for root if not using index.html
 // app.get('/', (req, res) => {
