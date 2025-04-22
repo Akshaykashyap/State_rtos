@@ -1372,8 +1372,8 @@
           {
             "rto": "RTO Rampur",
             "rto_code": "HP-92",
-            "address": "Regional Transport Officer Rampur Distt Shimla-172001, Himachal Pradesh", 
-            "phone": "01782-234759"    
+            "address": "Regional Transport Officer Rampur Distt Shimla-172001, Himachal Pradesh",
+            "phone": "01782-234759"
           }
         ]
       },
@@ -1629,6 +1629,12 @@
             "rto_code": "HP-97",
             "address": "Sub Divisional Officer (C ) Indora District Kangra-176401, Himachal Pradesh",
             "phone": " 01893-256222"
+          },
+          {
+            "rto": "Rakkar New RTO",
+            "rto_code": "HP-39A",
+            "address": "Dari",
+            "phone": "09857694771"
           }
         ]
       },
@@ -1692,336 +1698,336 @@
             "rto": "RLA (Registering and Licensing Authority) Bharmaur",
             "rto_code": "HP-46",
             "address": "Sub Divisional Officer (C) Bharmaur Distt Chamba-176315, Himachal Pradesh",
-          "phone": "01895-225506"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Dalhousie",
-          "rto_code": "HP-47",
-          "address": "Sub DivisionalOfficer(C) Dalhousie Distt.Chamba-176304, Himachal Pradesh",
-          "phone": "1899242122"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Chowari (Bhattiyat)",
-          "rto_code": "HP-57",
-          "address": "Sub DivisionalOfficer (C) Bhattiyat Distt Chamba-176302, Himachal Pradesh",
-          "phone": "01899-266455"
-        },
-        {
-          "rto": "RTO Chamba",
-          "rto_code": "HP-73",
-          "address": "Regional Transport Officer Chamba Distt. Chamba-176310, Himachal Pradesh",
-          "phone": "01899-224131"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Salooni",
-          "rto_code": "HP-81",
-          "address": "Sub Divisional Office Salooni Distt. Chamba-176320, Himachal Pradesh",
-          "phone": "01896-233122"
-        }
-      ]
-    },
-    {
-      "district": "Una",
-      "rtos": [
-        {
-          "rto": "RLA (Registering and Licensing Authority) Amb",
-          "rto_code": "HP-19",
-          "address": "Sub Divisional Officer (C) Amb Distt.Una-177203, Himachal Pradesh",
-          "phone": "01976-261203"
-        },
-        {
-          "rto": "RTO Una",
-          "rto_code": "HP-72",
-          "address": "Regional Transport Officer Una-174303, Himachal Pradesh",
-          "phone": "01975-203020"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Bangana",
-          "rto_code": "HP-78",
-          "address": "Sub Divisional Officer (C) Bangana Distt Una- 174304, Himachal Pradesh",
-          "phone": "01975-263060"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Una",
-          "rto_code": "HP-20",
-          "address": "Sub Divisional Officer (C) Una- 174303, Himachal Pradesh",
-          "phone": "01975-223621"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Jubbal",
-          "rto_code": "HP-75",
-          "address": "Regional Transport Office, Gagret, Himachal Pradesh",
-          "phone": "Not Available"
-        },
-        {
-          "rto": "Haroli",
-          "rto_code": "HP-80",
-          "address": "Sub Divisional Office Haroli Distt. Haroli-177220, Himachal Pradesh",
-          "phone": "01975-284400"
-        }
-      ]
-    },
-    {
-      "district": "Bilaspur",
-      "rtos": [
-        {
-          "rto": "RTO Bilaspur",
-          "rto_code": "HP-69",
-          "address": "Regional Transport Officer Bilaspur Distt. Bilaspur-174001, Himachal Pradesh",
-          "phone": "01978-221364"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Bilaspur",
-          "rto_code": "HP-24",
-          "address": "Sub Divisional Officer (C ) Bilaspur- 174001, Himachal Pradesh",
-          "phone": "01978-224798"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Ghumarwin",
-          "rto_code": "HP-23",
-          "address": "Sub DivisionalOfficer(C) Ghumarwin DisttBilaspur-174021, Himachal Pradesh",
-          "phone": "01978-255277"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Jhandutta",
-          "rto_code": "HP-89",
-          "address": "Sub DivisionalOfficer(C) Jhandutta Distt Bilaspur-174034, Himachal Pradesh",
-          "phone": "01978-272122"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Naina Devi ji at Swarghat",
-          "rto_code": "HP-91",
-          "address": "Sub DivisionalOfficer(C) Naina Devi Ji at Swarghat Distt Bilaspur-174011, Himachal Pradesh", 
-          "phone": "01978-284094"    
-        }
-      ]
-    },
-    {
-      "district": "Hamirpur",
-      "rtos": [
-        {
-          "rto": "RLA (Registering and Licensing Authority) Barsar",
-          "rto_code": "HP-21",
-          "address": "Sub Divisional Officer (C) Barsar Distt. Hamirpur-174305, Himachal Pradesh",
-          "phone": "01972-288045"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Hamirpur",
-          "rto_code": "HP-22",
-          "address": "Sub Divisional Officer (C) Hamirpur- 177001, Himachal Pradesh",
-          "phone": "01972-224304"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Nadaun",
-          "rto_code": "HP-55",
-          "address": "Sub Divisional Officer (C) Nadaun Distt. Hamirpur-177033, Himachal Pradesh",
-          "phone": "01972-232511"
-        },
-        {
-          "rto": "RTO Hamirpur",
-          "rto_code": "HP-67",
-          "address": "Regional Transport Officer Hamirpur District Hamirpur-177001, Himachal Pradesh",
-          "phone": "01972-221330"
-        },
-        {
-          "rto": "Bhoranj",
-          "rto_code": "HP-74",
-          "address": "Sub Divisional Officer (C) Bhoranj Distt. Hamirpur-176045, Himachal Pradesh",
-          "phone": "01972-266928"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Sujanpur",
-          "rto_code": "HP-84",
-          "address": "Sub Divisional Office Sujanpur Distt. Hamirpur- 176110, Himachal Pradesh",
-          "phone": "01972-273100"
-        }
-      ]
-    },
-    {
-      "district": "Lahaul and Spiti",
-      "rtos": [
-        {
-          "rto": "RLA (Registering and Licensing Authority) Kaza",
-          "rto_code": "HP-41",
-          "address": "Sub Divisional Officer (C) Kaza Distt.Lahaul & Spiti-172114, Himachal Pradesh",
-          "phone": "01906-222302"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Keylong",
-          "rto_code": "HP-42",
-          "address": "Sub Divisional Officer (C) Keylong Distt. Lahual &Spiti-175132, Himachal Pradesh",
-          "phone": "01900-222225"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Udaipur",
-          "rto_code": "HP-43",
-          "address": "Sub Divisional Officer (C) Udaipur Distt. Lahaul & Spiti- 175142, Himachal Pradesh",
-          "phone": "01909-222224"
-        }
-      ]
-    },
-    {
-      "district": "Kinnaur",
-      "rtos": [
-        {
-          "rto": "RLA (Registering and Licensing Authority) Kalpa",
-          "rto_code": "HP-25",
-          "address": "Sub Divisional Officer (C) Kalpa Distt.Kinnaur-172108, Himachal Pradesh",
-          "phone": "01786-222253"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Nichar",
-          "rto_code": "HP-26",
-          "address": "Sub Divisional Officer (C) Nichar Distt. Kinnaur-172103, Himachal Pradesh",
-          "phone": "01786-263201"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Pooh",
-          "rto_code": "HP-27",
-          "address": "Sub Divisional Officer (C) Pooh Distt.Kinnaur-172111, Himachal Pradesh",
-          "phone": "01785-232222"
-        }
-      ]
-    },
-    {
-      "district": "Sirmaur",
-      "rtos": [
-        {
-          "rto": "RLA (Registering and Licensing Authority) Rajgarh",
-          "rto_code": "HP-16",
-          "address": "Sub Divisional Officer (C) Rajgarh Distt. Sirmaur-173101, Himachal Pradesh",
-          "phone": "01799-221034"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Paonta Sahib",
-          "rto_code": "HP-17",
-          "address": "Sub Divisional Officer (C) Paonta Sahib Distt. Sirmaur-173025, Himachal Pradesh",
-          "phone": "01704-224100"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Nahan",
-          "rto_code": "HP-18",
-          "address": "Sub Divisional Officer (C) Nahan District Sirmaur- 173001, Himachal Pradesh",
-          "phone": "01702-222239"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Sangrah",
-          "rto_code": "HP-79",
-          "address": "Sub Divisional Officer (C) Sangrah -173023 Distt. Sirmaur, Himachal Pradesh",
-          "phone": "01702-248004"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Shillai",
-          "rto_code": "HP-85",
-          "address": "Sub Divisional Officer (C) Shillai Distt. Sirmaur-173027, Himachal Pradesh",
-          "phone": "01704-278534"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Theog",
-          "rto_code": "HP-09-02",
-          "address": "Office of the Sub Divisional Officer (Civil), Kotkhai, Distt. Shimla-171202",
-          "phone": "01783-234005"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Arki",
-          "rto_code": "HP-11-02",
-          "address": "Office of the Sub Divisional Officer (Civil), Darlaghat, Distt. Solan-171115",
-          "phone": "01978-284222"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Bilaspur",
-          "rto_code": "HP-24-02",
-          "address": "Office of the Tehsildar, Bharari, Distt. Bilaspur-174024",
-          "phone": "01978-287855"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Ghumarvi",
-          "rto_code": "HP-23-02",
-          "address": "Office of the Sub Divisional Officer (Civil), Jaswan, Distt. Kangra-177101",
-          "phone": "01970-246001"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Jogendranagar",
-          "rto_code": "HP-29-02",
-          "address": "Office of the Sub Divisional Officer (Civil), Lad Bharol, Distt. Mandi-175023",
-          "phone": "01908-267222"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Karsog",
-          "rto_code": "HP-30-02",
-          "address": "Office of the Sub Divisional Officer (Civil), Pangna, Distt. Mandi-175021",
-          "phone": "01907-250022"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Ani",
-          "rto_code": "HP-35-02",
-          "address": "Office of the Sub Divisional Officer (Civil), Nirmand, Distt. Kullu-172002",
-          "phone": "01907-233001"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Dehra",
-          "rto_code": "HP-36-02",
-          "address": "Office of the Sub Divisional Officer (Civil), Haripur, Distt. Kangra-177102",
-          "phone": "01970-244001"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Jaisingpur",
-          "rto_code": "HP-37-02",
-          "address": "Office of the Sub Divisional Officer (Civil), Jaisinghpur, Distt. Kangra-176095",
-          "phone": "01894-228111"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Nurpur",
-          "rto_code": "HP-38-02",
-          "address": "Office of the Sub Divisional Officer (Civil), Indora, Distt. Kangra-176401",
-          "phone": "01893-257001"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Baijnath",
-          "rto_code": "HP-53-03",
-          "address": "Office of the Sub Divisional Officer (Civil), Bhadwar, Distt. Kangra-176082",
-          "phone": "01893-248001"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Barsar",
-          "rto_code": "HP-21-03",
-          "address": "Office of the Sub Divisional Officer (Civil), Sujanpur, Distt. Hamirpur-176110",
-          "phone": "01972-272222"
-        },
-        {
-          "rto": "RTO Una",
-          "rto_code": "HP-72-02",
-          "address": "Office of the Sub Divisional Officer (Civil), Haroli, Distt. Una-174301",
-          "phone": "01975-244001"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Amb",
-          "rto_code": "HP-19-02",
-          "address": "Office of the Sub Divisional Officer (Civil), Shillai, Distt. Sirmaur-173107",
-          "phone": "01707-277001"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Bangana",
-          "rto_code": "HP-78-02",
-          "address": "Office of the Sub Divisional Officer (Civil), Kalpa, Distt. Kinnaur-172108",
-          "phone": "01786-226001"
-        },
-        {
-          "rto": "RLA (Registering and Licensing Authority) Kelang",
-          "rto_code": "HP-42-02",
-          "address": "Office of the Sub Divisional Officer (Civil), Udaipur, Distt. Lahaul & Spiti-175138",
-          "phone": "01909-242001"
-        },
-        {
-          "rto": "RTO Sirmaur",
-          "rto_code": "HP-71",
-          "address": "Regional Transport Officer Sirmaur at Nahan-173001, Himachal Pradesh",
-          "phone": "01702-225968"
-        }
-      ]
-    }
-  ]
-},
+            "phone": "01895-225506"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Dalhousie",
+            "rto_code": "HP-47",
+            "address": "Sub DivisionalOfficer(C) Dalhousie Distt.Chamba-176304, Himachal Pradesh",
+            "phone": "1899242122"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Chowari (Bhattiyat)",
+            "rto_code": "HP-57",
+            "address": "Sub DivisionalOfficer (C) Bhattiyat Distt Chamba-176302, Himachal Pradesh",
+            "phone": "01899-266455"
+          },
+          {
+            "rto": "RTO Chamba",
+            "rto_code": "HP-73",
+            "address": "Regional Transport Officer Chamba Distt. Chamba-176310, Himachal Pradesh",
+            "phone": "01899-224131"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Salooni",
+            "rto_code": "HP-81",
+            "address": "Sub Divisional Office Salooni Distt. Chamba-176320, Himachal Pradesh",
+            "phone": "01896-233122"
+          }
+        ]
+      },
+      {
+        "district": "Una",
+        "rtos": [
+          {
+            "rto": "RLA (Registering and Licensing Authority) Amb",
+            "rto_code": "HP-19",
+            "address": "Sub Divisional Officer (C) Amb Distt.Una-177203, Himachal Pradesh",
+            "phone": "01976-261203"
+          },
+          {
+            "rto": "RTO Una",
+            "rto_code": "HP-72",
+            "address": "Regional Transport Officer Una-174303, Himachal Pradesh",
+            "phone": "01975-203020"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Bangana",
+            "rto_code": "HP-78",
+            "address": "Sub Divisional Officer (C) Bangana Distt Una- 174304, Himachal Pradesh",
+            "phone": "01975-263060"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Una",
+            "rto_code": "HP-20",
+            "address": "Sub Divisional Officer (C) Una- 174303, Himachal Pradesh",
+            "phone": "01975-223621"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Jubbal",
+            "rto_code": "HP-75",
+            "address": "Regional Transport Office, Gagret, Himachal Pradesh",
+            "phone": "Not Available"
+          },
+          {
+            "rto": "Haroli",
+            "rto_code": "HP-80",
+            "address": "Sub Divisional Office Haroli Distt. Haroli-177220, Himachal Pradesh",
+            "phone": "01975-284400"
+          }
+        ]
+      },
+      {
+        "district": "Bilaspur",
+        "rtos": [
+          {
+            "rto": "RTO Bilaspur",
+            "rto_code": "HP-69",
+            "address": "Regional Transport Officer Bilaspur Distt. Bilaspur-174001, Himachal Pradesh",
+            "phone": "01978-221364"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Bilaspur",
+            "rto_code": "HP-24",
+            "address": "Sub Divisional Officer (C ) Bilaspur- 174001, Himachal Pradesh",
+            "phone": "01978-224798"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Ghumarwin",
+            "rto_code": "HP-23",
+            "address": "Sub DivisionalOfficer(C) Ghumarwin DisttBilaspur-174021, Himachal Pradesh",
+            "phone": "01978-255277"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Jhandutta",
+            "rto_code": "HP-89",
+            "address": "Sub DivisionalOfficer(C) Jhandutta Distt Bilaspur-174034, Himachal Pradesh",
+            "phone": "01978-272122"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Naina Devi ji at Swarghat",
+            "rto_code": "HP-91",
+            "address": "Sub DivisionalOfficer(C) Naina Devi Ji at Swarghat Distt Bilaspur-174011, Himachal Pradesh",
+            "phone": "01978-284094"
+          }
+        ]
+      },
+      {
+        "district": "Hamirpur",
+        "rtos": [
+          {
+            "rto": "RLA (Registering and Licensing Authority) Barsar",
+            "rto_code": "HP-21",
+            "address": "Sub Divisional Officer (C) Barsar Distt. Hamirpur-174305, Himachal Pradesh",
+            "phone": "01972-288045"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Hamirpur",
+            "rto_code": "HP-22",
+            "address": "Sub Divisional Officer (C) Hamirpur- 177001, Himachal Pradesh",
+            "phone": "01972-224304"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Nadaun",
+            "rto_code": "HP-55",
+            "address": "Sub Divisional Officer (C) Nadaun Distt. Hamirpur-177033, Himachal Pradesh",
+            "phone": "01972-232511"
+          },
+          {
+            "rto": "RTO Hamirpur",
+            "rto_code": "HP-67",
+            "address": "Regional Transport Officer Hamirpur District Hamirpur-177001, Himachal Pradesh",
+            "phone": "01972-221330"
+          },
+          {
+            "rto": "Bhoranj",
+            "rto_code": "HP-74",
+            "address": "Sub Divisional Officer (C) Bhoranj Distt. Hamirpur-176045, Himachal Pradesh",
+            "phone": "01972-266928"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Sujanpur",
+            "rto_code": "HP-84",
+            "address": "Sub Divisional Office Sujanpur Distt. Hamirpur- 176110, Himachal Pradesh",
+            "phone": "01972-273100"
+          }
+        ]
+      },
+      {
+        "district": "Lahaul and Spiti",
+        "rtos": [
+          {
+            "rto": "RLA (Registering and Licensing Authority) Kaza",
+            "rto_code": "HP-41",
+            "address": "Sub Divisional Officer (C) Kaza Distt.Lahaul & Spiti-172114, Himachal Pradesh",
+            "phone": "01906-222302"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Keylong",
+            "rto_code": "HP-42",
+            "address": "Sub Divisional Officer (C) Keylong Distt. Lahual &Spiti-175132, Himachal Pradesh",
+            "phone": "01900-222225"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Udaipur",
+            "rto_code": "HP-43",
+            "address": "Sub Divisional Officer (C) Udaipur Distt. Lahaul & Spiti- 175142, Himachal Pradesh",
+            "phone": "01909-222224"
+          }
+        ]
+      },
+      {
+        "district": "Kinnaur",
+        "rtos": [
+          {
+            "rto": "RLA (Registering and Licensing Authority) Kalpa",
+            "rto_code": "HP-25",
+            "address": "Sub Divisional Officer (C) Kalpa Distt.Kinnaur-172108, Himachal Pradesh",
+            "phone": "01786-222253"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Nichar",
+            "rto_code": "HP-26",
+            "address": "Sub Divisional Officer (C) Nichar Distt. Kinnaur-172103, Himachal Pradesh",
+            "phone": "01786-263201"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Pooh",
+            "rto_code": "HP-27",
+            "address": "Sub Divisional Officer (C) Pooh Distt.Kinnaur-172111, Himachal Pradesh",
+            "phone": "01785-232222"
+          }
+        ]
+      },
+      {
+        "district": "Sirmaur",
+        "rtos": [
+          {
+            "rto": "RLA (Registering and Licensing Authority) Rajgarh",
+            "rto_code": "HP-16",
+            "address": "Sub Divisional Officer (C) Rajgarh Distt. Sirmaur-173101, Himachal Pradesh",
+            "phone": "01799-221034"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Paonta Sahib",
+            "rto_code": "HP-17",
+            "address": "Sub Divisional Officer (C) Paonta Sahib Distt. Sirmaur-173025, Himachal Pradesh",
+            "phone": "01704-224100"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Nahan",
+            "rto_code": "HP-18",
+            "address": "Sub Divisional Officer (C) Nahan District Sirmaur- 173001, Himachal Pradesh",
+            "phone": "01702-222239"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Sangrah",
+            "rto_code": "HP-79",
+            "address": "Sub Divisional Officer (C) Sangrah -173023 Distt. Sirmaur, Himachal Pradesh",
+            "phone": "01702-248004"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Shillai",
+            "rto_code": "HP-85",
+            "address": "Sub Divisional Officer (C) Shillai Distt. Sirmaur-173027, Himachal Pradesh",
+            "phone": "01704-278534"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Theog",
+            "rto_code": "HP-09-02",
+            "address": "Office of the Sub Divisional Officer (Civil), Kotkhai, Distt. Shimla-171202",
+            "phone": "01783-234005"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Arki",
+            "rto_code": "HP-11-02",
+            "address": "Office of the Sub Divisional Officer (Civil), Darlaghat, Distt. Solan-171115",
+            "phone": "01978-284222"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Bilaspur",
+            "rto_code": "HP-24-02",
+            "address": "Office of the Tehsildar, Bharari, Distt. Bilaspur-174024",
+            "phone": "01978-287855"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Ghumarvi",
+            "rto_code": "HP-23-02",
+            "address": "Office of the Sub Divisional Officer (Civil), Jaswan, Distt. Kangra-177101",
+            "phone": "01970-246001"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Jogendranagar",
+            "rto_code": "HP-29-02",
+            "address": "Office of the Sub Divisional Officer (Civil), Lad Bharol, Distt. Mandi-175023",
+            "phone": "01908-267222"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Karsog",
+            "rto_code": "HP-30-02",
+            "address": "Office of the Sub Divisional Officer (Civil), Pangna, Distt. Mandi-175021",
+            "phone": "01907-250022"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Ani",
+            "rto_code": "HP-35-02",
+            "address": "Office of the Sub Divisional Officer (Civil), Nirmand, Distt. Kullu-172002",
+            "phone": "01907-233001"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Dehra",
+            "rto_code": "HP-36-02",
+            "address": "Office of the Sub Divisional Officer (Civil), Haripur, Distt. Kangra-177102",
+            "phone": "01970-244001"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Jaisingpur",
+            "rto_code": "HP-37-02",
+            "address": "Office of the Sub Divisional Officer (Civil), Jaisinghpur, Distt. Kangra-176095",
+            "phone": "01894-228111"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Nurpur",
+            "rto_code": "HP-38-02",
+            "address": "Office of the Sub Divisional Officer (Civil), Indora, Distt. Kangra-176401",
+            "phone": "01893-257001"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Baijnath",
+            "rto_code": "HP-53-03",
+            "address": "Office of the Sub Divisional Officer (Civil), Bhadwar, Distt. Kangra-176082",
+            "phone": "01893-248001"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Barsar",
+            "rto_code": "HP-21-03",
+            "address": "Office of the Sub Divisional Officer (Civil), Sujanpur, Distt. Hamirpur-176110",
+            "phone": "01972-272222"
+          },
+          {
+            "rto": "RTO Una",
+            "rto_code": "HP-72-02",
+            "address": "Office of the Sub Divisional Officer (Civil), Haroli, Distt. Una-174301",
+            "phone": "01975-244001"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Amb",
+            "rto_code": "HP-19-02",
+            "address": "Office of the Sub Divisional Officer (Civil), Shillai, Distt. Sirmaur-173107",
+            "phone": "01707-277001"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Bangana",
+            "rto_code": "HP-78-02",
+            "address": "Office of the Sub Divisional Officer (Civil), Kalpa, Distt. Kinnaur-172108",
+            "phone": "01786-226001"
+          },
+          {
+            "rto": "RLA (Registering and Licensing Authority) Kelang",
+            "rto_code": "HP-42-02",
+            "address": "Office of the Sub Divisional Officer (Civil), Udaipur, Distt. Lahaul & Spiti-175138",
+            "phone": "01909-242001"
+          },
+          {
+            "rto": "RTO Sirmaur",
+            "rto_code": "HP-71",
+            "address": "Regional Transport Officer Sirmaur at Nahan-173001, Himachal Pradesh",
+            "phone": "01702-225968"
+          }
+        ]
+      }
+    ]
+  },
   {
     "state": "Jharkhand",
     "districts": [

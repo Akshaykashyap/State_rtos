@@ -48,7 +48,7 @@ async function displayStateMap(stateName) {
     }
 
     let center = [22.5, 79];
-    let zoom = 5;
+    let zoom = 4;
 
     stateMap = L.map(stateMapContainer).setView(center, zoom);
 
