@@ -73,7 +73,7 @@ async function displayStateMap(stateName) {
 
         function highlightFeature(e) {
             const layer = e.target;
-            layer.setStyle({ weight: 3, color: '#666', fillOpacity: 0.7 });
+            layer.setStyle({ weight: 3, color: '#666', fillOpacity: 0.5 });
             layer.bringToFront();
         }
 
@@ -87,7 +87,7 @@ async function displayStateMap(stateName) {
         function onEachFeature(feature, layer) {
             layer.on({ mouseover: highlightFeature, mouseout: resetHighlight });
             if (stateName && feature.properties.NAME_1 && feature.properties.NAME_1.toLowerCase() === stateName.toLowerCase()) {
-                layer.setStyle({ fillColor: 'green', fillOpacity: 0.5 });
+                layer.setStyle({ fillColor: 'yellow', fillOpacity: 0.5 });
                 stateMap.fitBounds(layer.getBounds());
                 highlightedLayer = layer;
             }
@@ -345,6 +345,9 @@ searchInput.addEventListener('input', async () => {
     rtoResultDiv.innerHTML = "";
     rtoResultDiv.classList.remove("has-results");
 
+    let stateFound = false; 
+    let districtFound = false; 
+
     if (query) {
         const normalizedCodeMatch = query
             .toUpperCase()
@@ -389,8 +392,6 @@ searchInput.addEventListener('input', async () => {
         }
 
         if (fullRtoData) {
-            let stateFound = false;
-            let districtFound = false;
             for (const state of fullRtoData) {
                 const stateDetailsResponse = await fetch(`/api/rto/states/${encodeURIComponent(state)}`);
                 if (stateDetailsResponse.ok) {
