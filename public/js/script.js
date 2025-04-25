@@ -35,7 +35,7 @@ function handleInputChange() {
     }
 }
 
-async function displayStateMap(stateName) {
+async function displayStateMap(stateName = null, districtName = null) {
     if (!stateMapContainer) {
         console.error('State map container element not found in the DOM.');
         return;
@@ -53,27 +53,33 @@ async function displayStateMap(stateName) {
     stateMap = L.map(stateMapContainer).setView(center, zoom);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(stateMap);
 
     try {
-        const response = await fetch('maps/india_states.geojson');
+        const response = await fetch('maps/india.geojson');
         if (!response.ok) {
-            console.error(`Failed to fetch India states map data: ${response.status}`);
+            console.error(`Failed to fetch India districts map data: ${response.status}`);
             stateMapContainer.innerHTML = `<p class="text-danger">Map data not available.</p>`;
             return;
         }
-        const statesData = await response.json();
+        const districtsData = await response.json();
 
         function style(feature) {
-            return { fillColor: '#f03', weight: 1, opacity: 1, color: 'black', fillOpacity: 0.1 };
+            return {
+                fillColor: '#f03',
+                weight: 1,
+                opacity: 1,
+                color: 'blue',
+                fillOpacity: 0.1
+            };
         }
 
         let highlightedLayer = null;
 
         function highlightFeature(e) {
             const layer = e.target;
-            layer.setStyle({ weight: 3, color: '#666', fillOpacity: 0.5 });
+            layer.setStyle({ weight: 3, color: '#666', fillOpacity: 0.3 });
             layer.bringToFront();
         }
 
@@ -86,14 +92,25 @@ async function displayStateMap(stateName) {
 
         function onEachFeature(feature, layer) {
             layer.on({ mouseover: highlightFeature, mouseout: resetHighlight });
-            if (stateName && feature.properties.NAME_1 && feature.properties.NAME_1.toLowerCase() === stateName.toLowerCase()) {
+
+            const featureDistrict = feature.properties.district?.toLowerCase();
+            const featureState = feature.properties.st_nm?.toLowerCase();
+
+            if (districtName && featureDistrict === districtName.toLowerCase()) {
                 layer.setStyle({ fillColor: 'yellow', fillOpacity: 0.5 });
+                stateMap.fitBounds(layer.getBounds());
+                highlightedLayer = layer;
+            } else if (stateName && !districtName && featureState === stateName.toLowerCase()) {
+                layer.setStyle({ fillColor: 'orange', fillOpacity: 0.3 });
                 stateMap.fitBounds(layer.getBounds());
                 highlightedLayer = layer;
             }
         }
 
-        const geojsonLayer = L.geoJSON(statesData, { style: style, onEachFeature: onEachFeature }).addTo(stateMap);
+        const geojsonLayer = L.geoJSON(districtsData, {
+            style: style,
+            onEachFeature: onEachFeature
+        }).addTo(stateMap);
 
     } catch (error) {
         console.error("Error loading map:", error);
@@ -114,16 +131,16 @@ async function searchRTO() {
     document.getElementById("loading").classList.remove("d-none");
     rtoResultDiv.innerHTML = "";
     rtoResultDiv.classList.remove("has-results");
-    if (stateMapContainer) displayStateMap();
 
     let stateFound = false;
     let districtFound = false;
+    let districtState = null;
 
     if (fullRtoData) {
         const searchedState = fullRtoData.find(stateObj => stateObj.toLowerCase() === query.toLowerCase());
         if (searchedState) {
             stateFound = true;
-            await displayStateMap(query);
+            await displayStateMap(searchedState);
             let totalRTOs = 0;
             const stateDetailsResponse = await fetch(`/api/rto/states/${encodeURIComponent(searchedState)}`);
             if (stateDetailsResponse.ok) {
@@ -156,10 +173,11 @@ async function searchRTO() {
             if (stateDetailsResponse.ok) {
                 const stateDetails = await stateDetailsResponse.json();
                 if (stateDetails && stateDetails.districts) {
-                    const foundDistrict = stateDetails.districts.find(district =>  typeof district === 'string' && district.toLowerCase() === query.toLowerCase());
+                    const foundDistrict = stateDetails.districts.find(district => typeof district === 'string' && district.toLowerCase() === query.toLowerCase());
                     if (foundDistrict) {
                         districtFound = true;
-                        await displayStateMap(state);
+                        districtState = state;
+                        await displayStateMap(state, foundDistrict);
                         document.getElementById("loading").classList.remove("d-none");
 
                         fetch(`/api/rto/search?q=${encodeURIComponent(query)}&state=${encodeURIComponent(state)}`)
@@ -199,11 +217,13 @@ async function searchRTO() {
                                     rtoResultDiv.innerHTML = `<p class="text-danger">No RTO found in ${state} for "${query}".</p>`;
                                     rtoResultDiv.classList.remove("has-results");
                                 }
+                                document.getElementById("loading").classList.add("d-none");
                             })
                             .catch(error => {
                                 console.error("Error during district-specific search:", error);
                                 rtoResultDiv.innerHTML = `<p class="text-danger">Error searching RTOs in ${state}.</p>`;
                                 rtoResultDiv.classList.remove("has-results");
+                                document.getElementById("loading").classList.add("d-none");
                             });
                         return;
                     }
@@ -211,7 +231,6 @@ async function searchRTO() {
             }
         }
     }
-
 
     const queries = query
         .split(",")
@@ -278,6 +297,13 @@ async function searchRTO() {
                 ${rto.phone ? `<p><strong>Phone No:</strong> ${rto.phone}</p>` : ""}
             </div>
         `;
+        if (rto.district && rto.state && !districtFound) {
+            displayStateMap(rto.state, rto.district);
+            districtFound = true;
+        } else if (rto.state && !stateFound && !districtFound) {
+            displayStateMap(rto.state);
+            stateFound = true;
+        }
     });
 
     if (resultsHTML) {
@@ -286,6 +312,7 @@ async function searchRTO() {
     } else if (!stateFound && !districtFound) {
         rtoResultDiv.innerHTML = `<p class="text-danger">No RTO found for "${query}".</p>`;
         rtoResultDiv.classList.remove("has-results");
+        displayStateMap();
     }
 }
 
@@ -345,8 +372,9 @@ searchInput.addEventListener('input', async () => {
     rtoResultDiv.innerHTML = "";
     rtoResultDiv.classList.remove("has-results");
 
-    let stateFound = false; 
-    let districtFound = false; 
+    let stateFound = false;
+    let districtFound = false;
+    let districtState = null;
 
     if (query) {
         const normalizedCodeMatch = query
@@ -373,22 +401,24 @@ searchInput.addEventListener('input', async () => {
                         </div>
                     `;
                     rtoResultDiv.classList.add("has-results");
-                    if (rtoInfo.state) {
-                        displayStateMap(rtoInfo.state);
+                    if (rtoInfo.district && rtoInfo.state) {
+                        await displayStateMap(rtoInfo.state, rtoInfo.district);
+                    } else if (rtoInfo.state) {
+                        await displayStateMap(rtoInfo.state);
                     } else {
-                        displayStateMap();
+                        await displayStateMap();
                     }
                 } else {
                     rtoResultDiv.innerHTML = `<p class="text-danger">No RTO found for code "${normalizedCode}".</p>`;
                     rtoResultDiv.classList.remove("has-results");
-                    displayStateMap();
+                    await displayStateMap();
                 }
-                return;
             } else {
                 rtoResultDiv.innerHTML = `<p class="text-danger">Error fetching RTO data for code "${normalizedCode}".</p>`;
                 rtoResultDiv.classList.remove("has-results");
-                displayStateMap();
+                await displayStateMap();
             }
+            return;
         }
 
         if (fullRtoData) {
@@ -397,11 +427,11 @@ searchInput.addEventListener('input', async () => {
                 if (stateDetailsResponse.ok) {
                     const stateDetails = await stateDetailsResponse.json();
                     if (stateDetails && stateDetails.districts) {
-                        const foundDistrict = stateDetails.districts.find(district =>  typeof district === 'string' && district.toLowerCase() === query.toLowerCase());
+                        const foundDistrict = stateDetails.districts.find(district => typeof district === 'string' && district.toLowerCase() === query.toLowerCase());
                         if (foundDistrict) {
                             districtFound = true;
-                            stateFound=true;
-                            await displayStateMap(state);
+                            districtState = state;
+                            await displayStateMap(state, foundDistrict);
                             document.getElementById("loading").classList.remove("d-none");
                             fetch(`/api/rto/search?q=${encodeURIComponent(query)}&state=${encodeURIComponent(state)}`)
                                 .then(response => response.json())
@@ -422,7 +452,7 @@ searchInput.addEventListener('input', async () => {
 
                                     uniqueResults.forEach(rto => {
                                         resultsHTML += `
-                                            <div class="card p-3 mb-2">
+                                            <div class="card p-3 mb.ConcurrentModificationException2">
                                                 ${rto.rto ? `<p class="mb-1"><strong>RTO Name:</strong> ${rto.rto}</p>` : ""}
                                                 ${rto.rto_code ? `<p class="mb-1"><strong>RTO Code:</strong> ${rto.rto_code}</p>` : ""}
                                                 ${rto.state ? `<p class="mb-1"><strong>State:</strong> ${rto.state}</p>` : ""}
@@ -440,6 +470,7 @@ searchInput.addEventListener('input', async () => {
                                         rtoResultDiv.innerHTML = `<p class="text-danger">No RTO found in ${state} for "${query}".</p>`;
                                         rtoResultDiv.classList.remove("has-results");
                                     }
+                                    document.getElementById("loading").classList.add("d-none");
                                 })
                                 .catch(error => {
                                     console.error("Error during district-specific search:", error);
@@ -448,10 +479,9 @@ searchInput.addEventListener('input', async () => {
                                     rtoResultDiv.classList.remove("has-results");
                                 });
                             return;
-                        }
-                        else if(state.toLowerCase()===query.toLowerCase()){
-                            stateFound=true;
-                             await displayStateMap(query);
+                        } else if (state.toLowerCase() === query.toLowerCase()) {
+                            stateFound = true;
+                            await displayStateMap(state);
                             let totalRTOs = 0;
                             const stateDetailsResponse = await fetch(`/api/rto/states/${encodeURIComponent(state)}`);
                             if (stateDetailsResponse.ok) {
@@ -480,7 +510,6 @@ searchInput.addEventListener('input', async () => {
                 }
             }
         }
-
 
         document.getElementById("loading").classList.remove("d-none");
         fetch(`/api/rto/search?q=${encodeURIComponent(query)}`)
@@ -512,6 +541,13 @@ searchInput.addEventListener('input', async () => {
                             ${rto.phone ? `<p class="mb-1"><strong>Phone No:</strong> ${rto.phone}</p>` : ""}
                         </div>
                     `;
+                    if (rto.district && rto.state && !districtFound) {
+                        displayStateMap(rto.state, rto.district);
+                        districtFound = true;
+                    } else if (rto.state && !stateFound && !districtFound) {
+                        displayStateMap(rto.state);
+                        stateFound = true;
+                    }
                 });
 
                 if (resultsHTML) {
@@ -520,6 +556,7 @@ searchInput.addEventListener('input', async () => {
                 } else if (!stateFound && !districtFound) {
                     rtoResultDiv.innerHTML = `<p class="text-danger">No RTO found for "${query}".</p>`;
                     rtoResultDiv.classList.remove("has-results");
+                    displayStateMap();
                 }
             })
             .catch(error => {
@@ -527,6 +564,7 @@ searchInput.addEventListener('input', async () => {
                 document.getElementById("loading").classList.add("d-none");
                 rtoResultDiv.innerHTML = `<p class="text-danger">Error searching RTOs.</p>`;
                 rtoResultDiv.classList.remove("has-results");
+                displayStateMap();
             });
     } else {
         displayStateMap();
