@@ -68,9 +68,9 @@ async function displayStateMap(stateName = null, districtName = null) {
         function style(feature) {
             return {
                 fillColor: '#f03',
-                weight: 1,
-                opacity: 1,
-                color: 'blue',
+                weight: .5,
+                opacity: .3,
+                color: 'purple',
                 fillOpacity: 0.1
             };
         }
