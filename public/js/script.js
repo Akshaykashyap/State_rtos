@@ -576,3 +576,58 @@ searchInput.addEventListener('keypress', function(event) {
         searchRTO();
     }
 });
+
+async function validateAndAddNewRto() {
+    const form = document.getElementById('addRtoForm');
+    let isValid = true;
+  
+    // Reset previous error messages
+    form.querySelectorAll('.error-message').forEach(msg => msg.textContent = '');
+  
+    // Validate each required field
+    const state = form.querySelector('#state');
+    if (!state.value) {
+      displayError(state, 'Please select a state.');
+      isValid = false;
+    }
+  
+    const district = form.querySelector('#district-select');
+    if (!district.value) {
+      displayError(district, 'Please select a district.');
+      isValid = false;
+    }
+  
+    const rtoName = form.querySelector('#rto');
+    if (!rtoName.value.trim()) {
+      displayError(rtoName, 'Please enter the RTO name.');
+      isValid = false;
+    }
+  
+    const rtoCode = form.querySelector('#rto_code');
+    if (!rtoCode.value.trim()) {
+      displayError(rtoCode, 'Please enter the RTO code.');
+      isValid = false;
+    }
+    const address = form.querySelector('#address');
+    if (!address.value.trim()) {
+      displayError(address, 'Please enter the Address.');
+      isValid = false;
+    }
+    const phone = form.querySelector('#phone');
+    if (!phone.value.trim()) {
+      displayError(phone, 'Please enter the Phone Number.');
+      isValid = false;
+    }
+  
+    if (isValid) {
+        alert('Submit Successfully');
+      addNewRto(form); // Proceed to submit the form data
+    }
+  }
+  
+  function displayError(inputElement, message) {
+    const errorDiv = inputElement.nextElementSibling;
+    if (errorDiv && errorDiv.classList.contains('error-message')) {
+      errorDiv.textContent = message;
+    }
+  }
